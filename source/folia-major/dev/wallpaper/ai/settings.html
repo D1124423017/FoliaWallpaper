@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Folia Wallpaper · AI 連線</title>
+<style>:root{color-scheme:dark;font:16px/1.6 system-ui;color:#e7e5e4;background:#171717}*{box-sizing:border-box}body{margin:0;padding:48px 20px}main{max-width:620px;margin:auto}h1{font-size:30px;margin:0 0 10px}p{color:#aaa}form{margin-top:28px}label{display:block;margin:20px 0 6px}input,select,button{font:inherit;border-radius:8px;padding:12px;width:100%;border:1px solid #454545;background:#242424;color:inherit}button{margin-top:26px;background:#e7e5e4;color:#171717;cursor:pointer;font-weight:600}small{display:block;color:#aaa;margin-top:6px}a{color:#bae6fd}#status{white-space:pre-wrap;margin-top:18px}[hidden]{display:none}</style></head>
+<body><main><h1>AI 主題連線</h1><p>設定一次，桌布就能依歌詞生成配色。Folia 播放器不用保持開啟。</p>
+<form id="form"><label for="provider">AI 服務</label><select id="provider"><option value="gemini">Google Gemini</option><option value="openai">OpenAI 相容服務／本機模型</option></select>
+<div id="compatible" hidden><label for="apiUrl">API 網址</label><input id="apiUrl" type="url" placeholder="https://api.example.com/v1" autocomplete="off"><label for="model">模型名稱</label><input id="model" placeholder="服務商提供的模型名稱" autocomplete="off"></div>
+<label for="apiKey">API 金鑰</label><input id="apiKey" type="password" autocomplete="new-password" spellcheck="false"><small id="keyHint">請填入自己的 API 金鑰。金鑰不會顯示在桌布或聊天中。</small>
+<small id="geminiHelp">可先使用 Free Tier 專案並保持未啟用付費帳單。前往 <a href="https://aistudio.google.com/apikey" target="_blank" rel="noreferrer">Google AI Studio</a> 建立金鑰。</small>
+<p>啟用 AI 主題時，最多 2,000 個字元的歌詞會送至你選定的服務。API 用量依供應商方案計算；已生成的主題會快取，避免同一首歌重複請求。</p>
+<button id="save" type="submit">儲存 AI 連線</button><div id="status" role="status" aria-live="polite"></div></form>
+<p>可在 Wallpaper Engine 的「主題來源」切換 AI 或封面取色。重新開啟設定，請使用「設定 AI 連線.cmd」。</p></main>
+<script>
+const token=new URLSearchParams(location.search).get('token');
+const provider=document.getElementById('provider'),apiUrl=document.getElementById('apiUrl'),model=document.getElementById('model'),apiKey=document.getElementById('apiKey'),status=document.getElementById('status'),save=document.getElementById('save');
+function update(){document.getElementById('compatible').hidden=provider.value!=='openai';document.getElementById('geminiHelp').hidden=provider.value!=='gemini';apiUrl.required=model.required=provider.value==='openai';}
+provider.addEventListener('change',update);
+fetch('/ai/config?token='+encodeURIComponent(token)).then(r=>{if(!r.ok)throw Error();return r.json()}).then(data=>{provider.value=data.provider;apiUrl.value=data.apiUrl;model.value=data.model;if(data.configured)document.getElementById('keyHint').textContent='已有金鑰；留空可保留目前金鑰。';update()}).catch(()=>{status.textContent='設定頁已過期。請重新執行「設定 AI 連線.cmd」。';save.disabled=true});
+document.getElementById('form').addEventListener('submit',async event=>{event.preventDefault();save.disabled=true;status.textContent='正在儲存…';try{const r=await fetch('/ai/config?token='+encodeURIComponent(token),{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({provider:provider.value,apiUrl:apiUrl.value,model:model.value,apiKey:apiKey.value})});const result=await r.json();if(!r.ok)throw Error(result.error);apiKey.value='';status.textContent='已儲存。桌布將在約 15 秒內為目前歌曲嘗試產生 AI 主題；可關閉此頁。';document.getElementById('keyHint').textContent='已有金鑰；留空可保留目前金鑰。'}catch(error){status.textContent=error.message||'儲存失敗。'}finally{save.disabled=false}});
+</script></body></html>

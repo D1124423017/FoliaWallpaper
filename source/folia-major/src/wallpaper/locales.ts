@@ -1,0 +1,40 @@
+// src/wallpaper/locales.ts — shared keys for desktop dictionaries and the standalone host.
+export const wallpaperEn = {
+  waiting: 'Waiting for music', idle: 'Ambient mode', loading: 'Finding synchronized lyrics',
+  word: 'Word-synchronized lyrics', line: 'Line-synchronized lyrics', missing: 'No suitable synchronized lyrics',
+  error: 'Lyrics service unavailable', noTimeline: 'This player has not provided a timeline',
+  bridgeOffline: 'Background lyric service is not running',
+  unverifiedTimeline: 'Video timeline unverified',
+  unaligned: 'Listening to align this recording automatically', audioAligned: 'Aligned with local audio',
+  audioPaused: 'Waiting for playback to align', audioUnavailable: 'Local audio alignment is unavailable', audioLoading: 'Loading local speech model',
+  ai_off: 'Cover theme', ai_waitingLyrics: 'AI · waiting for lyrics', ai_loading: 'Generating AI theme',
+  ai_ready: 'AI theme', ai_unconfigured: 'AI not configured · use the local AI setup launcher', ai_error: 'AI connection failed · using cover colors',
+  demo: 'Visual demo · synthetic spectrum · no audio', preview: 'Browser preview · live media requires Wallpaper Engine',
+  openDemo: 'View original Fume demo', pauseResume: 'Pause / resume demo', seek: 'Seek demo to 00:17',
+};
+export const wallpaperZhCN = {
+  waiting: '等待音乐播放', idle: '待机模式', loading: '正在寻找同步歌词', word: '逐字同步歌词',
+  line: '逐行同步歌词', missing: '未找到合适的同步歌词', error: '歌词服务暂时无法连接',
+  bridgeOffline: '背景歌词服务尚未启动',
+  unverifiedTimeline: '影片时间轴未验证',
+  unaligned: '正在聆听并自动对齐此版本', audioAligned: '已用本机音频对齐',
+  audioPaused: '等待播放以自动对齐', audioUnavailable: '本机音频辨识尚未就绪', audioLoading: '正在载入本机语音模型',
+  ai_off: '封面配色', ai_waitingLyrics: 'AI · 等待歌词', ai_loading: '正在生成 AI 主题',
+  ai_ready: 'AI 主题', ai_unconfigured: 'AI 尚未设置 · 请开启本机 AI 连接设置', ai_error: 'AI 连接失败 · 使用封面配色',
+  noTimeline: '播放器尚未提供时间轴', demo: '视觉示范 · 模拟频谱 · 不播放音频',
+  preview: '浏览器预览 · 即时歌曲资讯需在 Wallpaper Engine 中取得',
+  openDemo: '查看原版 Fume 示范', pauseResume: '暂停／继续示范', seek: '示范跳到 00:17',
+};
+export const wallpaperZhTW = {
+  waiting: '等待音樂播放', idle: '待機模式', loading: '正在尋找同步歌詞', word: '逐字同步歌詞',
+  line: '逐行同步歌詞', missing: '未找到合適的同步歌詞', error: '歌詞服務暫時無法連線',
+  bridgeOffline: '背景歌詞服務尚未啟動',
+  unverifiedTimeline: '影片時間軸未驗證',
+  unaligned: '正在聆聽並自動對齊此版本', audioAligned: '已用本機音訊對齊',
+  audioPaused: '等待播放以自動對齊', audioUnavailable: '本機音訊辨識尚未就緒', audioLoading: '正在載入本機語音模型',
+  ai_off: '封面配色', ai_waitingLyrics: 'AI · 等待歌詞', ai_loading: '正在產生 AI 主題',
+  ai_ready: 'AI 主題', ai_unconfigured: 'AI 尚未設定 · 請開啟本機 AI 連線設定', ai_error: 'AI 連線失敗 · 使用封面配色',
+  noTimeline: '播放器尚未提供時間軸', demo: '視覺示範 · 模擬頻譜 · 不播放音訊',
+  preview: '瀏覽器預覽 · 即時歌曲資訊需在 Wallpaper Engine 中取得',
+  openDemo: '查看原版 Fume 示範', pauseResume: '暫停／繼續示範', seek: '示範跳到 00:17',
+};

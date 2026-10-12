@@ -1,0 +1,9 @@
+{
+  "manifest_version": 3,
+  "name": "Folia Wallpaper · YouTube 時間軸",
+  "version": "1.1.0",
+  "description": "將 YouTube／YouTube Music 真實播放進度交給本機 Folia 桌布，不控制播放、不讀取帳號。",
+  "host_permissions": ["http://127.0.0.1:3189/*"],
+  "background": { "service_worker": "background.js", "type": "module" },
+  "content_scripts": [{ "matches": ["https://www.youtube.com/*", "https://music.youtube.com/*"], "js": ["content.js"] }]
+}
