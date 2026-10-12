@@ -9,7 +9,7 @@
 3. 下載配套工具，依工具包中的「使用說明.md」啟動背景歌詞服務。Chrome YouTube／YouTube Music 再載入其中的 chrome 擴充功能。
 4. 由原本的播放器播放歌曲；桌布接收歌名、封面、時間軸與系統頻譜，不播放音訊、不需要 Folia.exe。
 
-工具與完整原始碼：https://github.com/D1124423017/FoliaWallpaper/releases/tag/wallpaper.8
+工具與完整原始碼：https://github.com/D1124423017/FoliaWallpaper/releases/tag/wallpaper.8.1
 
 ## 中文設定
 
@@ -24,7 +24,7 @@
 
 原作：Folia；原專案作者：chthollyphile 與貢獻者。
 原專案：https://github.com/chthollyphile/folia-major
-修改基底：0.7.17；桌布版本：0.7.17-wallpaper.8；修改日期：2026-10-12。
+修改基底：0.7.17；桌布版本：0.7.17-wallpaper.8.1；修改日期：2026-10-12。
 本修改版依隨附 GNU AGPL-3.0 發佈，保留既有版權及授權聲明。修改版完整原始碼與配套程式可由上述公開頁面取得。本作品並非 Folia 官方發行或官方背書。軟體按現狀提供，不作保證。
 
 音樂、歌詞、封面及其他外部內容的權利屬於各自權利人。本作品不附帶歌曲音訊。

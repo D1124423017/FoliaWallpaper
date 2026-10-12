@@ -37,12 +37,22 @@ for (const [name, action] of [['啟動歌詞服務', 'start'], ['停止歌詞服
   ['設定AI連線', 'settings'], ['啟用本機音訊校正', 'audio-enable'], ['啟用NVIDIA加速', 'audio-gpu'], ['停用本機音訊校正', 'audio-disable']]) {
   await fs.writeFile(path.join(tools, `${name}.cmd`), `@echo off\r\nchcp 65001 >nul\r\n"%~dp0runtime\\node.exe" "%~dp0control.mjs" ${action}\r\nif errorlevel 1 pause\r\n`, 'utf8');
 }
-await fs.writeFile(path.join(tools, 'BUILD.json'), JSON.stringify({ version: '0.7.17-wallpaper.8', modified: '2026-10-12', platform: 'Windows x64',
+await fs.writeFile(path.join(tools, 'BUILD.json'), JSON.stringify({ version: '0.7.17-wallpaper.8.1', modified: '2026-10-12', platform: 'Windows x64',
   node: '24.21.0', uv: '0.13.0', python: '3.13.14', source: 'https://github.com/D1124423017/FoliaWallpaper', audioDefault: 'disabled' }, null, 2));
-await fs.cp(path.join(workspace, 'outputs/FoliaWallpaper'), wallpaper, { recursive: true });
+// Recreate only this owned staging folder so old builds cannot leak into a public package.
+const stageReal = await fs.realpath(stage);
+let wallpaperReal;
+try { wallpaperReal = await fs.realpath(wallpaper); } catch (error) { if (error.code !== 'ENOENT') throw error; }
+if (wallpaperReal && path.relative(stageReal, wallpaperReal) !== 'FoliaWallpaper') throw new Error('Wallpaper staging path escaped the publication folder');
+await fs.rm(wallpaper, { recursive: true, force: true });
+await fs.mkdir(wallpaper, { recursive: true });
+await fs.cp(path.join(repo, 'dist-wallpaper'), wallpaper, { recursive: true });
+await fs.rename(path.join(wallpaper, 'wallpaper.html'), path.join(wallpaper, 'index.html'));
+for (const name of ['project.json', 'SOURCE.json', 'LICENSE', 'preview.png', 'wallpaper-host.js'])
+  await fs.copyFile(path.join(workspace, 'outputs/FoliaWallpaper', name), path.join(wallpaper, name));
 await fs.copyFile(path.join(source, 'README-Wallpaper.md'), path.join(wallpaper, '使用說明.md'));
 const information = JSON.parse(await fs.readFile(path.join(wallpaper, 'SOURCE.json'), 'utf8'));
-information.adapterSource = 'source/folia-major/src/wallpaper'; information.sourceUrl = 'https://github.com/D1124423017/FoliaWallpaper/releases/tag/wallpaper.8';
+information.adapterSource = 'source/folia-major/src/wallpaper'; information.sourceUrl = 'https://github.com/D1124423017/FoliaWallpaper/releases/tag/wallpaper.8.1';
 await fs.writeFile(path.join(wallpaper, 'SOURCE.json'), JSON.stringify(information, null, 2));
 const project = JSON.parse(await fs.readFile(path.join(wallpaper, 'project.json'), 'utf8'));
 project.general.properties.themesource.value = 'cover';

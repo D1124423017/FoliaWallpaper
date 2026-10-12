@@ -45,7 +45,7 @@ await fs.writeFile(path.join(output, 'project.json'), JSON.stringify({
 }, null, 2));
 await fs.writeFile(path.join(output, 'SOURCE.json'), JSON.stringify({
   upstream: 'https://github.com/chthollyphile/folia-major', commit: 'a3574a784cb20972ac85edfd71449b1eb848ea7f',
-  version: '0.7.17-wallpaper.8', license: 'AGPL-3.0', renderer: 'src/components/visualizer/VisualizerRenderer.tsx',
+  version: '0.7.17-wallpaper.8.1', license: 'AGPL-3.0', renderer: 'src/components/visualizer/VisualizerRenderer.tsx',
   adapterSource: path.join(repo, 'src/wallpaper'), buildCommand: 'npm run build:wallpaper',
   note: 'Local adaptation. Original visualizer source is reused; this is not an upstream release.',
 }, null, 2));

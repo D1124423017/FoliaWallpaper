@@ -29,6 +29,6 @@
 本工具是基於 Folia 的非官方改作，依 GNU AGPL-3.0 發佈；原專案作者為 chthollyphile 與貢獻者，原檔案聲明保留。修改日期：2026-10-12。
 原專案：https://github.com/chthollyphile/folia-major
 本修改版：https://github.com/D1124423017/FoliaWallpaper
-完整修改版原始碼、建置脚本與工具下載：https://github.com/D1124423017/FoliaWallpaper/releases/tag/wallpaper.8
+完整修改版原始碼、建置脚本與工具下載：https://github.com/D1124423017/FoliaWallpaper/releases/tag/wallpaper.8.1
 
 Node.js、uv、第三方套件及下載的模型各依自身授權使用；隨附其授權與來源資料。音樂、歌詞和封面的權利屬於各自權利人。本軟體按現狀提供，不作保證。

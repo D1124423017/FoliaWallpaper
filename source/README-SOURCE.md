@@ -1,6 +1,6 @@
 # Folia Wallpaper 修改版原始碼
 
-本快照對應 0.7.17-wallpaper.8，修改日期：2026-10-12（Asia/Taipei）。
+本快照對應 0.7.17-wallpaper.8.1，修改日期：2026-10-12（Asia/Taipei）。
 原專案：https://github.com/chthollyphile/folia-major
 基底提交：a3574a784cb20972ac85edfd71449b1eb848ea7f
 原專案作者：chthollyphile；其他作者與權利聲明依原檔案及 CONTRIBUTORS.md。

@@ -2,15 +2,15 @@
 
 基於 [Folia](https://github.com/chthollyphile/folia-major) 的非官方 Wallpaper Engine Web 桌布，保留原版歌詞動畫與視覺邏輯，改接外部播放器的歌曲資訊、播放時間、封面與系統音訊。
 
-**繁體中文測試版：0.7.17-wallpaper.8**
+**繁體中文測試版：0.7.17-wallpaper.8.1**
 
 ## 下載
 
-[完整下載頁：桌布、Windows 配套工具、修改版原始碼及 SHA-256 校驗碼](https://github.com/D1124423017/FoliaWallpaper/releases/tag/wallpaper.8)
+[完整下載頁：桌布、Windows 配套工具、修改版原始碼及 SHA-256 校驗碼](https://github.com/D1124423017/FoliaWallpaper/releases/tag/wallpaper.8.1)
 
-- `FoliaWallpaper-Wallpaper-wallpaper.8.zip`：將其中 `index.html` 匯入 Wallpaper Engine。
-- `FoliaWallpaper-Tools-windows-x64-wallpaper.8.zip`：Windows 10/11 x64 的獨立背景歌詞服務、Chrome 時間軸連接與本機音訊校正安裝工具。
-- `FoliaWallpaper-Source-wallpaper.8.zip`：此版本完整修改原始碼與建置設定。
+- `FoliaWallpaper-Wallpaper-wallpaper.8.1.zip`：將其中 `index.html` 匯入 Wallpaper Engine。
+- `FoliaWallpaper-Tools-windows-x64-wallpaper.8.1.zip`：Windows 10/11 x64 的獨立背景歌詞服務、Chrome 時間軸連接與本機音訊校正安裝工具。
+- `FoliaWallpaper-Source-wallpaper.8.1.zip`：此版本完整修改原始碼與建置設定。
 - `SHA256SUMS.txt`：下載檔案校驗碼。
 
 完整歌詞功能需要另外安裝配套工具；只訂閱或匯入桌布不會自動安裝工具、瀏覽器擴充功能或模型。音樂仍由原本的播放器播放，不需要另外啟動 Folia 本體。
