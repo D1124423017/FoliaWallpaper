@@ -1,0 +1,17 @@
+Folia Mineradio 整合預覽版
+
+本程式是 Folia 與 Mineradio 的修改整合版本，不是任一原專案的官方發行版。
+
+Folia 原作者：chthollyphile 及貢獻者
+原始專案：https://github.com/chthollyphile/folia-major
+授權：GNU Affero General Public License version 3（AGPL-3.0）。
+
+Mineradio 原作者：XxHuberrr 及貢獻者
+原始專案：https://github.com/XxHuberrr/Mineradio-paused
+授權：GNU General Public License version 3（GPL-3.0）。
+
+兩個專案及第三方套件保留各自的版權與授權。完整授權條文及第三方致謝隨程式附於 resources/licenses，FFmpeg 授權及來源資訊位於 resources/ffmpeg-audio。修改版的對應原始碼應與安裝包一併提供。
+
+本程式依適用授權以現狀提供，不提供擔保。音樂、封面、字體與第三方平台內容仍受各自權利人及平台條款規範；軟體授權不代表取得這些內容的散布權利。
+
+此本機預覽版不會發布至 GitHub 或 Steam Workshop，也不會從上游自動安裝更新。

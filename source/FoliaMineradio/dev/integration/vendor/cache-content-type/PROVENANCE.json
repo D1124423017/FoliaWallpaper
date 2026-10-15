@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "name": "cache-content-type",
+  "version": "2.1.0",
+  "modified": false,
+  "source": "Verbatim published npm 2.1.0 package bytes. The separate integration entry adapter preserves its getType implementation and supplies Koa 2 a callable CommonJS export.",
+  "repository": "https://github.com/node-modules/cache-content-type",
+  "revision": "b4d59700bf3f0d4aad25db504cb316526fc029fa",
+  "tarballUrl": "https://registry.npmjs.org/cache-content-type/-/cache-content-type-2.1.0.tgz",
+  "tarballSha256": "2ee7f6c454996e6780d41eb31309910cbe6cde522bd939aeb77ef5d3beb4315f",
+  "license": "MIT"
+}

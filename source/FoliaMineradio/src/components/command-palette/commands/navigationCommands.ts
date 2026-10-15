@@ -1,0 +1,84 @@
+import type { CommandPaletteCommand } from '../types';
+import { defineCommand, createToggleCommand, createHomeTabCommand } from '../commandFactories';
+import { useStreamingPlayerStore } from '../../../stores/useStreamingPlayerStore';
+import { usePlayerExperienceStore } from '../../../stores/usePlayerExperienceStore';
+
+// src/components/command-palette/commands/navigationCommands.ts
+// Commands in the `navigation` group: moving between home tabs, the player, and window-level views.
+
+export const navigationCommands: CommandPaletteCommand[] = [
+    defineCommand({
+        id: 'experience-folia', group: 'navigation',
+        title: 'Folia experience', description: 'Use the original Folia interface and lyrics stage',
+        keywords: ['lyrics stage', 'original interface', '歌词舞台', '原版界面'],
+        execute: () => { usePlayerExperienceStore.getState().setMode('folia'); return true; },
+    }),
+    defineCommand({
+        id: 'experience-mineradio', group: 'navigation',
+        title: 'Mineradio experience', description: 'Use Mineradio controls, particles and cinematic stage',
+        keywords: ['particles', 'cinematic', '粒子', '电影镜头'],
+        execute: () => { usePlayerExperienceStore.getState().setMode('mineradio'); return true; },
+    }),
+    defineCommand({
+        id: 'experience-custom', group: 'navigation',
+        title: 'Custom experience', description: 'Combine controls, lyrics and backgrounds from both players',
+        keywords: ['mix interface', 'hybrid', '混搭', '自订界面'],
+        execute: () => { usePlayerExperienceStore.getState().setMode('custom'); return true; },
+    }),
+    defineCommand({
+        id: 'streaming-player', group: 'navigation', platform: ['electron'],
+        title: 'Spotify / YouTube', description: 'Play a Spotify or YouTube link in Folia',
+        keywords: ['spotify', 'youtube', 'yt', '串流', '串流播放', '在線播放'],
+        execute: () => { useStreamingPlayerStore.getState().open(); return true; },
+    }),
+    defineCommand({
+        id: 'lattice-focus-current', group: 'navigation', scope: 'lattice',
+        title: 'Lattice focus current song', description: 'Center the playing song in the queue collage',
+        keywords: ['lattice', 'lattice focus', 'queue collage', 'recenter', 'now playing', '队列拼贴', '聚焦当前歌曲', '回到当前歌曲'],
+        executeShortcut: 'c',
+        isAvailable: context => !context || context.navigation.canFocusLatticeCurrentSong,
+        execute: (_input, context) => context.navigation.focusLatticeCurrentSong(),
+    }),
+    createToggleCommand('navigate-home', 'navigation', 'Go home', 'Return to home view', ['home', '首页', '主页'], context => context.navigation.navigateToHome()),
+    createToggleCommand('navigate-player', 'navigation', 'Go player', 'Return to player view', ['player', '播放页', '播放器'], context => context.navigation.navigateToPlayer()),
+    createToggleCommand('navigate-lattice', 'navigation', 'Lattice open', 'Show the play queue as a queue collage', ['lattice', 'queue collage', 'song wall', 'poster wall', '队列拼贴', '歌曲墙', '海报墙'], context => context.navigation.navigateToLattice(),
+        // Already on the wall it is a no-op, and the wall renders the same control slots as the
+        // main bar — a slot bound to it would otherwise sit there offering to go nowhere.
+        // The stroke stays off the primary modifier keys macOS reserves: `ctrl` here resolves to
+        // Cmd, and Electron's default app menu answers Cmd+Q with Quit before the renderer ever
+        // sees the keydown. Same for W/M/R/H. Lattice.tsx matches this key to close the wall.
+        { isAvailable: context => !context || context.scope.view !== 'lattice', openHotkey: { key: 'b', ctrl: true }, executeShortcut: 'w' }),
+    {
+        id: 'browser-fullscreen',
+        group: 'navigation',
+        title: 'Fullscreen',
+        description: 'Toggle browser fullscreen',
+        keywords: ['full screen', 'f11', 'browser fullscreen', '全屏', '浏览器全屏'],
+        isAvailable: (context) => !context?.navigation.isWallpaperMode,
+        execute: (_input, context) => context.navigation.toggleBrowserFullscreen(),
+    },
+    createHomeTabCommand('playlist', 'Open playlists', 'Open playlist home tab', ['playlist', 'playlists', '歌单']),
+    createHomeTabCommand('local', 'Open local music', 'Open local music tab', ['local music', 'local', '本地', '本地音乐']),
+    createHomeTabCommand('albums', 'Open albums', 'Open albums tab', ['albums', 'album', '专辑']),
+    createHomeTabCommand('navidrome', 'Open Navidrome', 'Open Navidrome tab', ['navidrome', 'navi', '服务器']),
+    createHomeTabCommand('radio', 'Open radio', 'Open radio tab', ['radio', 'fm', '电台']),
+    {
+        id: 'desktop-toggle-remote-control',
+        platform: ['electron'],
+        group: 'navigation',
+        title: 'Toggle remote control window',
+        description: 'Open or close the remote control window',
+        keywords: ['remote control', 'remote window', 'toggle remote', '遥控窗口', '切换遥控窗口', '打开遥控'],
+        execute: (_input, context) => context.navigation.toggleRemoteControlWindow(),
+    },
+    {
+        id: 'desktop-toggle-main-window-always-on-top',
+        platform: ['electron'],
+        group: 'navigation',
+        title: 'Toggle main window always on top',
+        description: 'Pin or unpin the main window above other windows',
+        keywords: ['always on top', 'main window on top', 'pin main window', '主窗口置顶', '切换主窗口置顶', '取消主窗口置顶'],
+        isAvailable: (context) => !context?.navigation.isWallpaperMode,
+        execute: (_input, context) => context.navigation.toggleMainWindowAlwaysOnTop(),
+    }
+];

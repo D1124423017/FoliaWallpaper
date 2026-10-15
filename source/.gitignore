@@ -1,0 +1,15 @@
+# Player build outputs and private runtime data. Preserve the verified source snapshot verbatim.
+# Its original .gitignore remains unchanged; stage the verified manifest explicitly when publishing.
+/FoliaMineradio/node_modules/
+/FoliaMineradio/.integration-build/
+/FoliaMineradio/dist/
+/FoliaMineradio/dist-wallpaper/
+/FoliaMineradio/dist-wallpaper-lyrics/
+/FoliaMineradio/test-results/
+/FoliaMineradio/playwright-report/
+/FoliaMineradio/.dev-credentials/
+/FoliaMineradio/.env.local
+/FoliaMineradio/.env.*.local
+/FoliaMineradio/.data/
+/FoliaMineradio/.venv/
+/FoliaMineradio/models/

@@ -1,5 +1,15 @@
 # FoliaWallpaper
 
+本倉庫同時提供 Windows 播放器與 Wallpaper Engine 桌布，兩者分開安裝。
+
+## Folia Mineradio 播放器
+
+[播放器下載、完整原始碼與校驗碼](https://github.com/D1124423017/FoliaWallpaper/releases/tag/player.0.7.17-integration.4-license.1) · [安裝、功能及已知限制](PLAYER.md)
+
+Windows x64 未簽章預覽版，可選擇 Folia、Mineradio 或自訂混搭介面，共用播放、帳號、歌詞、佇列及設定。此版已完成本機驗證；驗證範圍與限制詳列於下載頁，外部平台內容依各來源權限提供。
+
+## Wallpaper Engine 桌布
+
 基於 [Folia](https://github.com/chthollyphile/folia-major) 的非官方 Wallpaper Engine Web 桌布，保留原版歌詞動畫與視覺邏輯，改接外部播放器的歌曲資訊、播放時間、封面與系統音訊。
 
 **繁體中文測試版：0.7.17-wallpaper.8.1**

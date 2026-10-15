@@ -1,0 +1,33 @@
+/* Original Mineradio layout remains intact; this sheet adapts its host capabilities. */
+@font-face { font-family: Inter; src: url('./assets/fonts/Inter.ttf') format('truetype'); font-weight: 100 900; font-display: swap; }
+@font-face { font-family: 'JetBrains Mono'; src: url('./assets/fonts/JetBrainsMono.ttf') format('truetype'); font-weight: 100 800; font-display: swap; }
+@font-face { font-family: 'Noto Sans SC'; src: url('./assets/fonts/NotoSansSC.ttf') format('truetype'); font-weight: 100 900; font-display: swap; }
+@font-face { font-family: 'Cinzel Decorative'; src: url('./assets/fonts/CinzelDecorative-Bold.ttf') format('truetype'); font-weight: 700; font-display: swap; }
+@font-face { font-family: 'Cinzel Decorative'; src: url('./assets/fonts/CinzelDecorative-Black.ttf') format('truetype'); font-weight: 900; font-display: swap; }
+@font-face { font-family: UnifrakturCook; src: url('./assets/fonts/UnifrakturCook-Bold.ttf') format('truetype'); font-weight: 700; font-display: swap; }
+html, body { width: 100%; height: 100%; }
+body { font-family: Inter, 'Noto Sans SC', 'Microsoft JhengHei', sans-serif; }
+#desktop-titlebar, #fullscreen-diy-zone, #update-entry, #trial-banner,
+#cookie-export-prompt, #desktop-mode-control-dock, #wallpaper-engine-layer,
+#wallpaper-engine-glass-sampler, #cuefield-feedback { display: none !important; }
+#desktop-window-shell { padding-top: 0 !important; }
+#splash, #splash-curtain, #splash-enter-hint { display: none !important; }
+.folia-hide-controls #bottom-bar, .folia-hide-controls #controls-handle,
+.folia-hide-controls #search-area, .folia-hide-controls #fx-fab,
+.folia-hide-controls #fx-fab-hide-btn, .folia-hide-controls #user-capsule { display: none !important; }
+.folia-hide-controls #fx-panel, .folia-hide-controls #playlist-panel { display: none !important; }
+.folia-hide-controls #top-right { display: none !important; }
+.folia-hide-controls #diy-mode-btn { display: none !important; }
+#top-right #diy-mode-btn { min-width: 40px; height: 32px; align-self: center; }
+#search-mode-tabs button:not(#search-mode-song) { display: none; }
+#search-mode-song { font-size: 0; }
+#search-mode-song::after { content: '共用音樂搜尋'; font-size: 11px; }
+[data-preset='7'], [data-preset='8'] { display: none !important; }
+.folia-hide-background #album-bg, .folia-hide-background #album-bg-next,
+.folia-hide-background #custom-bg { visibility: hidden !important; }
+.folia-controls-disabled #progress-bar,
+.folia-controls-disabled #play-btn, .folia-controls-disabled #prev-btn,
+.folia-controls-disabled #next-btn { pointer-events: none; opacity: .5; }
+#folia-core-status { position: fixed; bottom: 12px; left: 14px; z-index: 10; font-size: 10px; opacity: .65; pointer-events: none; color: #fff; }
+#folia-core-status { display: none; }
+#cuefield-automix-btn, [data-fx-console-entry='folia-unsupported'] { display: none !important; }

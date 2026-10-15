@@ -1,0 +1,16 @@
+/* Presentation picker stays below Electron's titlebar and does not change app-wide styles. */
+.experience-selector { position: fixed; top: 40px; left: 14px; z-index: 1200; max-width: min(360px, calc(100vw - 28px)); color: #f4f4f5; font-size: 12px; line-height: 1.5; -webkit-app-region: no-drag; }
+.experience-selector-trigger, .experience-selector-content { border: 1px solid #ffffff26; background: #151820ed; box-shadow: 0 5px 20px #0003; border-radius: 12px; }
+.experience-selector-trigger { display: flex; align-items: center; gap: 8px; padding: 8px 12px; cursor: pointer; }
+.experience-selector-content { padding: 14px; margin-top: 6px; max-height: calc(100vh - 115px); overflow-y: auto; overscroll-behavior: contain; }
+.experience-mode-buttons { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
+.experience-mode-buttons button { border: 1px solid #ffffff29; border-radius: 8px; padding: 6px 10px; cursor: pointer; background: #ffffff09; }
+.experience-mode-buttons button[aria-pressed="true"] { color: #11131b; background: #d8e4f4; border-color: #d8e4f4; }
+.experience-profile-fields { display: grid; gap: 8px; margin-top: 12px; }
+.experience-profile-fields label { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+.experience-profile-fields select { border: 1px solid #ffffff29; border-radius: 7px; background: #252934; color: #f4f4f5; padding: 5px 8px; }
+.experience-selector-content p { margin-top: 12px; max-width: 285px; color: #bbc2ce; }
+.experience-selector button:focus-visible, .experience-selector select:focus-visible { outline: 2px solid #aac8ed; outline-offset: 3px; }
+.experience-selector-embedded { position: static; max-width: none; width: 100%; font-size: 14px; }
+.experience-selector-embedded .experience-selector-content { margin-top: 0; max-height: none; }
+.experience-selector-embedded .experience-selector-content p { max-width: none; }
