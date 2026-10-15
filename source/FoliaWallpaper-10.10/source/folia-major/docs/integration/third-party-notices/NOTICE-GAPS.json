@@ -1,0 +1,557 @@
+{
+  "schema": 1,
+  "retrievedOn": "2026-10-14",
+  "purpose": "Publisher declarations and documented unresolved original-version license-text gaps; these metadata files do not grant permission or replace license texts.",
+  "entries": [
+    {
+      "name": "gzip",
+      "version": "0.1.0",
+      "declaredLicense": "MIT",
+      "usage": [
+        "electron-runtime-dependency"
+      ],
+      "publisherMetadata": {
+        "file": "gzip@0.1.0/PUBLISHER-METADATA.json",
+        "url": "https://registry.npmjs.org/gzip/0.1.0",
+        "sha256": "0aa51ab8db43344c15641092a4b53c850e1592ceed19147c6c48d290e72249b6",
+        "bytes": 931
+      },
+      "publishedGitHead": "259fa06c1bde29ed809d33d83cf9887108d487c4",
+      "repository": null,
+      "officialRepositoryChecks": [],
+      "limitation": "No full license document found in the published package or official repository at the published gitHead; publisher license declaration is retained, not a replacement license. Published src/gzip.js is empty (0 bytes); the record is an installed dependency graph entry, not evidence of a working GZIP feature."
+    },
+    {
+      "name": "https",
+      "version": "1.0.0",
+      "declaredLicense": "ISC",
+      "usage": [
+        "electron-runtime-dependency"
+      ],
+      "publisherMetadata": {
+        "file": "https@1.0.0/PUBLISHER-METADATA.json",
+        "url": "https://registry.npmjs.org/https/1.0.0",
+        "sha256": "af76de10e2bcbb6542b18f2ad64ba696c2bf874aa36cd2daa290e55a1bb86a0b",
+        "bytes": 985
+      },
+      "publishedGitHead": null,
+      "repository": null,
+      "officialRepositoryChecks": [],
+      "limitation": "Published package supplies no full license text and no gitHead. The official repository check did not establish an original-version notice; publisher declaration is retained, not a replacement license. Published package contains only package.json, with no implementation; the record is an installed dependency graph entry, not Node.js built-in https licensing."
+    },
+    {
+      "name": "lazy-val",
+      "version": "1.0.5",
+      "declaredLicense": "MIT",
+      "usage": [
+        "build-or-test-dependency",
+        "electron-runtime-dependency"
+      ],
+      "publisherMetadata": {
+        "file": "lazy-val@1.0.5/PUBLISHER-METADATA.json",
+        "url": "https://registry.npmjs.org/lazy-val/1.0.5",
+        "sha256": "b89c1fd70f2fdef869138eaa43addcc73719738762bb84cd6a1bbd3d776b841f",
+        "bytes": 2264
+      },
+      "publishedGitHead": "b69ad4119f1b19bdab13c61ee2fcc88d46b89071",
+      "repository": {
+        "url": "git+https://github.com/develar/lazy-val.git",
+        "type": "git"
+      },
+      "officialRepositoryChecks": [
+        {
+          "url": "https://api.github.com/repos/develar/lazy-val/git/trees/b69ad4119f1b19bdab13c61ee2fcc88d46b89071?recursive=1",
+          "status": 200,
+          "revision": "b69ad4119f1b19bdab13c61ee2fcc88d46b89071",
+          "noticePaths": []
+        },
+        {
+          "url": "https://api.github.com/repos/develar/lazy-val/git/trees/HEAD?recursive=1",
+          "status": 200,
+          "revision": "b69ad4119f1b19bdab13c61ee2fcc88d46b89071",
+          "noticePaths": []
+        }
+      ],
+      "limitation": "No full license document found in the published package or official repository at the published gitHead; publisher license declaration is retained, not a replacement license."
+    },
+    {
+      "name": "@electron-internal/extract-zip",
+      "version": "1.0.5",
+      "declaredLicense": "BSD-2-Clause",
+      "usage": [
+        "build-or-test-dependency"
+      ],
+      "publisherMetadata": {
+        "file": "@electron-internal__extract-zip@1.0.5/PUBLISHER-METADATA.json",
+        "url": "https://registry.npmjs.org/%40electron-internal%2Fextract-zip/1.0.5",
+        "sha256": "8fe6811fc810a4b65bbaaf3ab5da78cdce0ea6c82343acd2b55c9bc4f19b1f05",
+        "bytes": 3371
+      },
+      "publishedGitHead": "b83e459fd04c53b0a1c8438a6792df8f64be47fc",
+      "repository": {
+        "url": "git+https://github.com/electron/extract-zip.git"
+      },
+      "officialRepositoryChecks": [
+        {
+          "url": "https://api.github.com/repos/electron/extract-zip/git/trees/b83e459fd04c53b0a1c8438a6792df8f64be47fc?recursive=1",
+          "status": 200,
+          "revision": "b83e459fd04c53b0a1c8438a6792df8f64be47fc",
+          "noticePaths": []
+        },
+        {
+          "url": "https://api.github.com/repos/electron/extract-zip/git/trees/HEAD?recursive=1",
+          "status": 200,
+          "revision": "e50b0aea59b7144b12cde4fd795fab0bbca0f408",
+          "noticePaths": [
+            "LICENSE"
+          ]
+        }
+      ],
+      "limitation": "No full license document found in the published package or official repository at the published gitHead; publisher license declaration is retained, not a replacement license. Current official project license differs from this package version declaring BSD-2-Clause; it was deliberately not substituted."
+    },
+    {
+      "name": "@epic-web/invariant",
+      "version": "1.0.0",
+      "declaredLicense": "MIT",
+      "usage": [
+        "build-or-test-dependency"
+      ],
+      "publisherMetadata": {
+        "file": "@epic-web__invariant@1.0.0/PUBLISHER-METADATA.json",
+        "url": "https://registry.npmjs.org/%40epic-web%2Finvariant/1.0.0",
+        "sha256": "626a2fe84f02c459ef9fb80af05f880f30b30e12a2f5033348faa587accf10d5",
+        "bytes": 2157
+      },
+      "publishedGitHead": "547be2246d3c39f8ca44dd0502b1aa70bf4378af",
+      "repository": {
+        "url": "git+https://github.com/epicweb-dev/invariant.git",
+        "type": "git"
+      },
+      "officialRepositoryChecks": [
+        {
+          "url": "https://api.github.com/repos/epicweb-dev/invariant/git/trees/547be2246d3c39f8ca44dd0502b1aa70bf4378af?recursive=1",
+          "status": 200,
+          "revision": "547be2246d3c39f8ca44dd0502b1aa70bf4378af",
+          "noticePaths": []
+        },
+        {
+          "url": "https://api.github.com/repos/epicweb-dev/invariant/git/trees/HEAD?recursive=1",
+          "status": 200,
+          "revision": "d0cf40958972afb909fb14b2afc85d8c5f1ff5d6",
+          "noticePaths": []
+        }
+      ],
+      "limitation": "No full license document found in the published package or official repository at the published gitHead; publisher license declaration is retained, not a replacement license."
+    },
+    {
+      "name": "chromium-pickle-js",
+      "version": "0.2.0",
+      "declaredLicense": "MIT",
+      "usage": [
+        "build-or-test-dependency"
+      ],
+      "publisherMetadata": {
+        "file": "chromium-pickle-js@0.2.0/PUBLISHER-METADATA.json",
+        "url": "https://registry.npmjs.org/chromium-pickle-js/0.2.0",
+        "sha256": "a8802235db2714f5dbc0be220874fe5ea36dd541b9764a533ac22788152a435a",
+        "bytes": 1526
+      },
+      "publishedGitHead": "72ecd4d52d8e676a595636e1ec9ba74060344137",
+      "repository": {
+        "url": "git+https://github.com/electron/node-chromium-pickle-js.git",
+        "type": "git"
+      },
+      "officialRepositoryChecks": [
+        {
+          "url": "https://api.github.com/repos/electron/node-chromium-pickle-js/git/trees/72ecd4d52d8e676a595636e1ec9ba74060344137?recursive=1",
+          "status": 200,
+          "revision": "72ecd4d52d8e676a595636e1ec9ba74060344137",
+          "noticePaths": []
+        },
+        {
+          "url": "https://api.github.com/repos/electron/node-chromium-pickle-js/git/trees/HEAD?recursive=1",
+          "status": 200,
+          "revision": "72ecd4d52d8e676a595636e1ec9ba74060344137",
+          "noticePaths": []
+        }
+      ],
+      "limitation": "No full license document found in the published package or official repository at the published gitHead; publisher license declaration is retained, not a replacement license."
+    },
+    {
+      "name": "compare-version",
+      "version": "0.1.2",
+      "declaredLicense": "MIT",
+      "usage": [
+        "build-or-test-dependency"
+      ],
+      "publisherMetadata": {
+        "file": "compare-version@0.1.2/PUBLISHER-METADATA.json",
+        "url": "https://registry.npmjs.org/compare-version/0.1.2",
+        "sha256": "c30d61c8d3f73ab58be47a820e628b0fbe6b33a6ebcc52b092a5e5aae978939f",
+        "bytes": 1308
+      },
+      "publishedGitHead": null,
+      "repository": {
+        "url": "git://github.com/kevva/compare-version",
+        "type": "git"
+      },
+      "officialRepositoryChecks": [
+        {
+          "url": "https://api.github.com/repos/kevva/compare-version/git/trees/HEAD?recursive=1",
+          "status": 404,
+          "revision": null,
+          "noticePaths": []
+        },
+        {
+          "url": "https://api.github.com/repos/kevva/compare-version/git/trees/HEAD?recursive=1",
+          "status": 404,
+          "revision": null,
+          "noticePaths": []
+        }
+      ],
+      "limitation": "Published package supplies no full license text and no gitHead. The official repository check did not establish an original-version notice; publisher declaration is retained, not a replacement license."
+    },
+    {
+      "name": "cross-dirname",
+      "version": "0.1.0",
+      "declaredLicense": "MIT",
+      "usage": [
+        "build-or-test-dependency"
+      ],
+      "publisherMetadata": {
+        "file": "cross-dirname@0.1.0/PUBLISHER-METADATA.json",
+        "url": "https://registry.npmjs.org/cross-dirname/0.1.0",
+        "sha256": "df384763df9cac5843ee160fe66f4a48ee3c73235a4ff08c5a2ab76ce28e048d",
+        "bytes": 3808
+      },
+      "publishedGitHead": "cf2a0674f338e21e53d752933e748849399cd104",
+      "repository": {
+        "url": "git+https://github.com/JumpLink/cross-dirname.git",
+        "type": "git"
+      },
+      "officialRepositoryChecks": [
+        {
+          "url": "https://api.github.com/repos/JumpLink/cross-dirname/git/trees/cf2a0674f338e21e53d752933e748849399cd104?recursive=1",
+          "status": 200,
+          "revision": "cf2a0674f338e21e53d752933e748849399cd104",
+          "noticePaths": []
+        },
+        {
+          "url": "https://api.github.com/repos/JumpLink/cross-dirname/git/trees/HEAD?recursive=1",
+          "status": 200,
+          "revision": "cf2a0674f338e21e53d752933e748849399cd104",
+          "noticePaths": []
+        }
+      ],
+      "limitation": "No full license document found in the published package or official repository at the published gitHead; publisher license declaration is retained, not a replacement license."
+    },
+    {
+      "name": "err-code",
+      "version": "2.0.3",
+      "declaredLicense": "MIT",
+      "usage": [
+        "build-or-test-dependency"
+      ],
+      "publisherMetadata": {
+        "file": "err-code@2.0.3/PUBLISHER-METADATA.json",
+        "url": "https://registry.npmjs.org/err-code/2.0.3",
+        "sha256": "c11fc2918c90e0476ecc0424f778afbc900ded3ec2255f140d70d88f6236960e",
+        "bytes": 2573
+      },
+      "publishedGitHead": "92511d41a6a926c94c9d11493404867b1e92a77a",
+      "repository": {
+        "url": "git://github.com/IndigoUnited/js-err-code.git",
+        "type": "git"
+      },
+      "officialRepositoryChecks": [
+        {
+          "url": "https://api.github.com/repos/IndigoUnited/js-err-code/git/trees/92511d41a6a926c94c9d11493404867b1e92a77a?recursive=1",
+          "status": 200,
+          "revision": "92511d41a6a926c94c9d11493404867b1e92a77a",
+          "noticePaths": []
+        },
+        {
+          "url": "https://api.github.com/repos/IndigoUnited/js-err-code/git/trees/HEAD?recursive=1",
+          "status": 200,
+          "revision": "8dd437663a48e833ab70223f8a58a888985d1e3a",
+          "noticePaths": []
+        }
+      ],
+      "limitation": "No full license document found in the published package or official repository at the published gitHead; publisher license declaration is retained, not a replacement license."
+    },
+    {
+      "name": "keyv",
+      "version": "4.5.4",
+      "declaredLicense": "MIT",
+      "usage": [
+        "build-or-test-dependency"
+      ],
+      "publisherMetadata": {
+        "file": "keyv@4.5.4/PUBLISHER-METADATA.json",
+        "url": "https://registry.npmjs.org/keyv/4.5.4",
+        "sha256": "1859a5b5c544a75228f46af65da4c530ef71439e5a2bb581763b484233ecdd6e",
+        "bytes": 1928
+      },
+      "publishedGitHead": null,
+      "repository": {
+        "url": "git+https://github.com/jaredwray/keyv.git",
+        "type": "git"
+      },
+      "officialRepositoryChecks": [
+        {
+          "url": "https://api.github.com/repos/jaredwray/keyv/git/trees/HEAD?recursive=1",
+          "status": 200,
+          "revision": "ae1bdf67d5405d66ca58f3383c38072126927d05",
+          "noticePaths": [
+            "LICENSE",
+            "compression/compress-brotli/LICENSE",
+            "compression/compress-gzip/LICENSE",
+            "compression/compress-lz4/LICENSE",
+            "core/bigmap/LICENSE",
+            "core/keyv/LICENSE",
+            "core/test-suite/LICENSE",
+            "encryption/encrypt-node/LICENSE",
+            "encryption/encrypt-web/LICENSE",
+            "scripts/license-sync.ts",
+            "serialization/msgpackr/LICENSE",
+            "serialization/superjson/LICENSE",
+            "storage/cloudflare-kv/LICENSE",
+            "storage/dynamo/LICENSE",
+            "storage/etcd/LICENSE",
+            "storage/memcache/LICENSE",
+            "storage/mongo/LICENSE",
+            "storage/mysql/LICENSE",
+            "storage/postgres/LICENSE",
+            "storage/redis/LICENSE",
+            "storage/sqlite/LICENSE",
+            "storage/valkey-glide/LICENSE",
+            "storage/valkey/LICENSE",
+            "website/LICENSE"
+          ]
+        },
+        {
+          "url": "https://api.github.com/repos/jaredwray/keyv/git/trees/HEAD?recursive=1",
+          "status": 200,
+          "revision": "ae1bdf67d5405d66ca58f3383c38072126927d05",
+          "noticePaths": [
+            "LICENSE",
+            "compression/compress-brotli/LICENSE",
+            "compression/compress-gzip/LICENSE",
+            "compression/compress-lz4/LICENSE",
+            "core/bigmap/LICENSE"
+          ]
+        },
+        {
+          "url": "https://raw.githubusercontent.com/jaredwray/keyv/ae1bdf67d5405d66ca58f3383c38072126927d05/LICENSE",
+          "status": 200,
+          "limitation": "MIT heading, copyright and warranty text; permission grant absent."
+        }
+      ],
+      "limitation": "Published package supplies no full license text and no gitHead. The official repository check did not establish an original-version notice; publisher declaration is retained, not a replacement license. Current official project LICENSE is titled MIT but contains copyright and warranty text without the permission grant; it does not establish a complete original-version license and was not substituted."
+    },
+    {
+      "name": "node-api-version",
+      "version": "0.2.1",
+      "declaredLicense": "MIT",
+      "usage": [
+        "build-or-test-dependency"
+      ],
+      "publisherMetadata": {
+        "file": "node-api-version@0.2.1/PUBLISHER-METADATA.json",
+        "url": "https://registry.npmjs.org/node-api-version/0.2.1",
+        "sha256": "ff35af2964717ffccb8e4df2b4b1c142f33b2cf112a0233218f1c33903f02799",
+        "bytes": 1290
+      },
+      "publishedGitHead": null,
+      "repository": {
+        "url": "https://github.com/timfish/node-api-version",
+        "type": "git"
+      },
+      "officialRepositoryChecks": [
+        {
+          "url": "https://api.github.com/repos/timfish/node-api-version/git/trees/HEAD?recursive=1",
+          "status": 200,
+          "revision": "9cf9768c456f5c8988376992a74fbca804031842",
+          "noticePaths": []
+        },
+        {
+          "url": "https://api.github.com/repos/timfish/node-api-version/git/trees/HEAD?recursive=1",
+          "status": 200,
+          "revision": "9cf9768c456f5c8988376992a74fbca804031842",
+          "noticePaths": []
+        }
+      ],
+      "limitation": "Published package supplies no full license text and no gitHead. The official repository check did not establish an original-version notice; publisher declaration is retained, not a replacement license."
+    },
+    {
+      "name": "read-binary-file-arch",
+      "version": "1.0.6",
+      "declaredLicense": "MIT",
+      "usage": [
+        "build-or-test-dependency"
+      ],
+      "publisherMetadata": {
+        "file": "read-binary-file-arch@1.0.6/PUBLISHER-METADATA.json",
+        "url": "https://registry.npmjs.org/read-binary-file-arch/1.0.6",
+        "sha256": "2d66bab1edd09430fb288ebd59f0fff4056ab8f1d2663fe6e6d01decd1dc01e7",
+        "bytes": 1582
+      },
+      "publishedGitHead": null,
+      "repository": {
+        "url": "git+ssh://git@github.com/samuelmaddock/read-binary-file-arch.git",
+        "type": "git"
+      },
+      "officialRepositoryChecks": [
+        {
+          "url": "https://api.github.com/repos/samuelmaddock/read-binary-file-arch/git/trees/HEAD?recursive=1",
+          "status": 200,
+          "revision": "37156c22f07966dd132be84797fb7c9eb0a4cebe",
+          "noticePaths": []
+        },
+        {
+          "url": "https://api.github.com/repos/samuelmaddock/read-binary-file-arch/git/trees/HEAD?recursive=1",
+          "status": 200,
+          "revision": "37156c22f07966dd132be84797fb7c9eb0a4cebe",
+          "noticePaths": []
+        }
+      ],
+      "limitation": "Published package supplies no full license text and no gitHead. The official repository check did not establish an original-version notice; publisher declaration is retained, not a replacement license."
+    },
+    {
+      "name": "stackback",
+      "version": "0.0.2",
+      "declaredLicense": "MIT",
+      "usage": [
+        "build-or-test-dependency"
+      ],
+      "publisherMetadata": {
+        "file": "stackback@0.0.2/PUBLISHER-METADATA.json",
+        "url": "https://registry.npmjs.org/stackback/0.0.2",
+        "sha256": "b165861241d958f5111d25594d60d3be317f38e4f09271bc5a757dc66d409f4c",
+        "bytes": 1006
+      },
+      "publishedGitHead": null,
+      "repository": {
+        "url": "git://github.com/shtylman/node-stackback.git",
+        "type": "git"
+      },
+      "officialRepositoryChecks": [
+        {
+          "url": "https://api.github.com/repos/shtylman/node-stackback/git/trees/HEAD?recursive=1",
+          "status": 200,
+          "revision": "24d55717e16f1bb2109e848ea2b3a90ea900ddb5",
+          "noticePaths": []
+        },
+        {
+          "url": "https://api.github.com/repos/shtylman/node-stackback/git/trees/HEAD?recursive=1",
+          "status": 200,
+          "revision": "24d55717e16f1bb2109e848ea2b3a90ea900ddb5",
+          "noticePaths": []
+        }
+      ],
+      "limitation": "Published package supplies no full license text and no gitHead. The official repository check did not establish an original-version notice; publisher declaration is retained, not a replacement license."
+    },
+    {
+      "name": "stats-gl",
+      "version": "2.4.2",
+      "declaredLicense": "MIT",
+      "usage": [
+        "build-or-test-dependency"
+      ],
+      "publisherMetadata": {
+        "file": "stats-gl@2.4.2/PUBLISHER-METADATA.json",
+        "url": "https://registry.npmjs.org/stats-gl/2.4.2",
+        "sha256": "d79f32e4c70ab55bb2d456d877409490e55bb8fdb1c8355fdfc62b3c360c9d36",
+        "bytes": 2133
+      },
+      "publishedGitHead": "c12b2e391d5a88616e0b30f3c7f0577966426239",
+      "repository": {
+        "url": "git+https://github.com/RenaudRohlinger/stats-gl.git",
+        "type": "git"
+      },
+      "officialRepositoryChecks": [
+        {
+          "url": "https://api.github.com/repos/RenaudRohlinger/stats-gl/git/trees/c12b2e391d5a88616e0b30f3c7f0577966426239?recursive=1",
+          "status": 200,
+          "revision": "c12b2e391d5a88616e0b30f3c7f0577966426239",
+          "noticePaths": []
+        },
+        {
+          "url": "https://api.github.com/repos/RenaudRohlinger/stats-gl/git/trees/HEAD?recursive=1",
+          "status": 200,
+          "revision": "dae82f5a4a14d19a3ec21bc47b28a491a668a036",
+          "noticePaths": []
+        }
+      ],
+      "limitation": "No full license document found in the published package or official repository at the published gitHead; publisher license declaration is retained, not a replacement license."
+    },
+    {
+      "name": "temp-file",
+      "version": "3.4.0",
+      "declaredLicense": "MIT",
+      "usage": [
+        "build-or-test-dependency"
+      ],
+      "publisherMetadata": {
+        "file": "temp-file@3.4.0/PUBLISHER-METADATA.json",
+        "url": "https://registry.npmjs.org/temp-file/3.4.0",
+        "sha256": "590387947ead2afa7d7703c487a09baf1c567d63093f64fcc9a832ee11201170",
+        "bytes": 2534
+      },
+      "publishedGitHead": "3534650dce58cb671fe3b4655e5eeeb036ff1839",
+      "repository": {
+        "url": "git+https://github.com/develar/temp-file.git",
+        "type": "git"
+      },
+      "officialRepositoryChecks": [
+        {
+          "url": "https://api.github.com/repos/develar/temp-file/git/trees/3534650dce58cb671fe3b4655e5eeeb036ff1839?recursive=1",
+          "status": 200,
+          "revision": "3534650dce58cb671fe3b4655e5eeeb036ff1839",
+          "noticePaths": []
+        },
+        {
+          "url": "https://api.github.com/repos/develar/temp-file/git/trees/HEAD?recursive=1",
+          "status": 200,
+          "revision": "3534650dce58cb671fe3b4655e5eeeb036ff1839",
+          "noticePaths": []
+        }
+      ],
+      "limitation": "No full license document found in the published package or official repository at the published gitHead; publisher license declaration is retained, not a replacement license."
+    },
+    {
+      "name": "tmp-promise",
+      "version": "3.0.3",
+      "declaredLicense": "MIT",
+      "usage": [
+        "build-or-test-dependency"
+      ],
+      "publisherMetadata": {
+        "file": "tmp-promise@3.0.3/PUBLISHER-METADATA.json",
+        "url": "https://registry.npmjs.org/tmp-promise/3.0.3",
+        "sha256": "97fc9d1761795c32dad0a76fea26b8cff2034be1b94c96a2d04731ba375f8a7a",
+        "bytes": 2534
+      },
+      "publishedGitHead": "7a9d92612d24791664669596c2705313d459ce7f",
+      "repository": {
+        "url": "git://github.com/benjamingr/tmp-promise.git",
+        "type": "git"
+      },
+      "officialRepositoryChecks": [
+        {
+          "url": "https://api.github.com/repos/benjamingr/tmp-promise/git/trees/7a9d92612d24791664669596c2705313d459ce7f?recursive=1",
+          "status": 200,
+          "revision": "7a9d92612d24791664669596c2705313d459ce7f",
+          "noticePaths": []
+        },
+        {
+          "url": "https://api.github.com/repos/benjamingr/tmp-promise/git/trees/HEAD?recursive=1",
+          "status": 200,
+          "revision": "3323195816b97f7dd6b6011681fcd1c960f07d95",
+          "noticePaths": []
+        }
+      ],
+      "limitation": "No full license document found in the published package or official repository at the published gitHead; publisher license declaration is retained, not a replacement license."
+    }
+  ]
+}

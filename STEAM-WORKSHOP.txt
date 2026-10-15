@@ -1,46 +1,36 @@
-[h1]Folia Wallpaper｜繁體中文・同步歌詞・音樂視覺[/h1]
+[h1]Folia Wallpaper｜Folia × Mineradio・繁體中文同步歌詞[/h1]
 
-把 Folia 的歌詞動畫與音樂視覺帶到 Windows 桌面。
+把 Folia 原版歌詞舞臺與 Mineradio 粒子視覺帶到 Windows 桌面。這是基於兩個開源專案的非官方改作，盡量重用原版動畫程式，透過 Wallpaper Engine 相容層接入歌曲、封面、時間軸與音訊頻譜。
 
-本作品基於 chthollyphile 與貢獻者開發的開源專案 Folia 製作，直接重用原版的歌詞動畫、視覺化與背景程式，改接 Wallpaper Engine 的歌曲資訊、時間軸及系統音訊頻譜。
-
-[h2]功能[/h2]
+[h2]wallpaper.10.10 功能[/h2]
 [list]
-[*]14 種原版歌詞樣式：心象、群唱、迴環、流光、鏡臺、浮名、繪光、莫奈、雲階、時計、商籟、靜止、凝彩、傾訴。
-[*]5 種原版背景：通用、隱現、莫奈、漫遊、空。
-[*]依專輯封面產生配色，搭配歌詞動畫與音訊反應。
-[*]跨來源自動搜尋同步歌詞，隨播放、暫停、跳轉及換歌更新。
-[*]錄音版本無法確認時，可使用本機音訊分析自動校正歌詞時間。
-[*]繁體中文設定，可切換歌詞樣式、背景、歌詞大小與音訊反應強度。
+[*]14 種 Folia 原版歌詞樣式與 5 種背景，保留原版排版與動畫邏輯。
+[*]Mineradio 原版粒子視覺：10 種粒子動畫與虛空安靜背景；不含完整播放器控制台或 3D 歌單。
+[*]封面配色、音訊反應、繁體中文動畫設定與多螢幕選單。
+[*]選擇 Chrome 指定分頁、Windows 媒體來源，或 Folia Mineradio 共用歌詞／時間軸。
+[*]跨來源搜尋歌詞；尚未確認時間時先顯示預覽，確認後切換同步動畫。
 [/list]
 
-[h2]使用需求與目前限制[/h2]
-目前為需要配套工具的測試版。完整歌詞功能需要另行安裝本機背景歌詞服務；Chrome 的 YouTube／YouTube Music 另需時間軸連接擴充功能。只訂閱桌布不會自動安裝這些配套。
+[h2]必須另外安裝配套工具[/h2]
+[b]只訂閱桌布不會安裝背景歌詞服務、Chrome 擴充功能或模型。[/b]
+[url=https://github.com/D1124423017/FoliaWallpaper/releases/tag/wallpaper.10.10]同版本桌布、Windows x64 配套工具、完整修改原始碼與校驗碼[/url]
+工具完整解壓縮後執行「啟動歌詞服務.cmd」。Chrome YouTube／YouTube Music 需載入工具內 chrome 擴充功能，重新整理歌曲分頁，再指定此分頁為 Folia 播放來源。重新開機後需再啟動服務，此版不自動建立開機啟動。
 
-音樂由你原本的播放器播放，不需要另外開啟 Folia 本體。播放器需提供歌曲資訊與可用的播放時間。
+音樂由原播放器播放，不需要另外開啟 Folia 本體。其他程式必須提供歌曲資訊或時間軸；只有聲音而沒有媒體資訊時，不能保證辨識歌曲。若希望直接播放並切換兩套 UI，可另下載：
+[url=https://github.com/D1124423017/FoliaWallpaper/releases/tag/player.0.7.17-integration.4-license.1]Folia Mineradio Windows 播放器（未簽章預覽版）[/url]
 
-本機音訊校正需下載語音模型，並由使用者啟用系統輸出音訊分析；不使用麥克風、不儲存錄音、不將音訊傳送至付費 AI API。首次校正需累積約 20 秒可辨識的歌聲，再加上處理時間。預設使用封面配色，不需要 AI 主題 API。
+[h2]可選音訊分析、AI 與限制[/h2]
+預設封面配色，不需要 AI API。本機 Whisper 校正、Gemini 音訊上傳及滾輪轉接均預設停用。
+本機分析須自行同意並下載 Python／模型，分析系統喇叭或耳機輸出，不使用麥克風、不保存錄音，可能包含其他同時播放的程式。
+AI 主題最多傳送 2000 字元歌詞文字。另行同意 Gemini 音訊校正後才會傳送 10 秒系統音訊至 Google；費用依自己的供應商與專案方案，不保證付費專案零費用。公開包沒有使用者金鑰或配對 token。
+同步依來源、錄音版本與時間軸品質而異，不保證每首歌、所有 MV 或真正逐字時間。Sonic 7／8、深度及手勢模型未收錄。多螢幕滾輪需依工具說明另行啟用。
 
-歌詞與同步品質取決於來源、錄音版本與辨識結果，不保證所有歌曲都有歌詞或真正的逐字時間。第三方來源也可能暫時無法連線。
-
-[h2]原作、改作與授權[/h2]
-原作：Folia
-原專案作者：chthollyphile；其他作者與署名請見原專案貢獻者資料及檔案內聲明。
-[url=https://github.com/chthollyphile/folia-major]Folia 原專案[/url]
-[url=https://github.com/chthollyphile/folia-major/blob/main/LICENSE]GNU AGPL-3.0 授權條款[/url]
-
-這是免費分享的非官方 Wallpaper Engine 改作，並非 Folia 官方發行或官方背書。
-修改基底：Folia 0.7.17；桌布版本：0.7.17-wallpaper.8.1。
-修改日期：2026-10-12。
-主要修改：Wallpaper Engine 轉接、繁體中文介面、背景歌詞服務、Chrome 時間軸連接、本機音訊自動對齊及相容性修正。
-本修改版依 GNU AGPL-3.0 發佈，保留原有版權與授權聲明；修改與再散布請遵守隨附授權條款。軟體按現狀提供，不作保證。
-
-修改版完整原始碼與配套工具：
-[url=https://github.com/D1124423017/FoliaWallpaper/releases/tag/wallpaper.8.1]完整下載頁：桌布、Windows 配套工具、修改版原始碼與校驗碼[/url]
-
-音樂、歌詞、專輯封面及外部內容的著作權屬於各自權利人。本作品不附帶歌曲音訊。
-
-感謝 Folia 原作者、貢獻者及相關開源專案。
-
-[url=https://github.com/D1124423017/FoliaWallpaper]本修改版公開原始碼專案[/url]
-可選 AI 主題需各自設定自己的 Gemini／OpenAI 相容 API 金鑰；本作品不分享任何使用者的 API 金鑰。費用依各自供應商與專案方案。
+[h2]原作、修改與授權[/h2]
+原作：chthollyphile 與 Folia 貢獻者；XxHuberrr 與 Mineradio 貢獻者。原 NOTICE 的 Emily、YUI7W 等致謝保留。
+[url=https://github.com/chthollyphile/folia-major]Folia 原專案（AGPL-3.0）[/url]
+[url=https://github.com/XxHuberrr/Mineradio-paused]Mineradio 原專案（GPL-3.0）[/url]
+Folia 基底：0.7.17／a3574a784cb20972ac85edfd71449b1eb848ea7f；Mineradio：d43de565acabfdc1a9c9820a27e81a98ccbebcef。
+發布日期：2026-10-15。修改包含繁體中文、桌布相容層、原版粒子接入、背景歌詞、指定來源、播放時間同步與獨立工具封裝。
+保留原有版權、完整 AGPL-3.0／GPL-3.0 及第三方各自授權；GSAP 為 Standard No-Charge License，並非 MIT。完整修改來源與重建說明隨同版本公開。通知資料含播放器與桌布的依賴聯集，實際範圍及歷史缺口另列。
+這是免費分享的非官方改作，沒有原作者官方背書。原 Folia README 的非營利用途文字保留，不另作商業授權承諾。軟體按現狀提供，不作保證。音樂、歌詞、封面及其他外部內容權利屬各自權利人，本作品不附歌曲音訊或平台帳號。
+[url=https://github.com/D1124423017/FoliaWallpaper]公開專案與完整修改原始碼[/url]

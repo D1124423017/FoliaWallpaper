@@ -1,0 +1,528 @@
+{
+  "schema": 1,
+  "version": "0.7.17-integration.4",
+  "appAsarSha256": "c551906e0da6803d989a1b3f746832d79cb7bff84f1fb592d72fcd948c143ef4",
+  "archive": "resources/app.asar",
+  "verifiedRendererChunks": 149,
+  "historicalNoticeItems": 26,
+  "integrationOnlyExcludedPackages": [
+    "electron-updater",
+    "lazy-val"
+  ],
+  "copiedVendors": [
+    {
+      "name": "GSAP",
+      "version": "3.15.0",
+      "notices": [
+        {
+          "path": "dependencies/gsap@3.15.0/GSAP-Standard-License.html",
+          "bytes": 76095,
+          "sha256": "887d7f7fa0111213d9c666de70533d437c53691676e5f8b2c17b50eb3fde7f14"
+        }
+      ],
+      "file": "dist/integration/mineradio/vendor/gsap.min.js",
+      "bytes": 72927,
+      "sha256": "92bb9a96476f983d212a2bc4f54c889039c1696dd4461d40a736860938570fbb"
+    },
+    {
+      "name": "music-tempo",
+      "version": "upstream vendored copy",
+      "notices": [
+        {
+          "path": "vendors/music-tempo.LICENCE",
+          "bytes": 1089,
+          "sha256": "12b4e069f64ae9a2660c1f5fe788e548487ec8385960bda0a0bfe177c95348cf"
+        }
+      ],
+      "file": "dist/integration/mineradio/vendor/music-tempo.min.js",
+      "bytes": 14537,
+      "sha256": "2927859a8e81e8874a95dc7af3a2a06fedd306826f774b7378e26ad5fa9cbd76"
+    },
+    {
+      "name": "opencc-js",
+      "version": "1.4.2",
+      "notices": [
+        {
+          "path": "dependencies/opencc-js@1.4.2/LICENSE",
+          "bytes": 1080,
+          "sha256": "960f7fc16d8baa126802316a7df9078a383af4fb6bc60033adb28e85c08d5e5e"
+        },
+        {
+          "path": "dependencies/opencc-js@1.4.2/THIRD_PARTY_LICENSES.md",
+          "bytes": 10232,
+          "sha256": "42c7dbe71c178fcca97ba945e9ac9ff360fb69bbfea4cb50556f6c65bfa59806"
+        },
+        {
+          "path": "dependencies/opencc-js@1.4.2/LICENSES/Apache-2.0.txt",
+          "bytes": 9165,
+          "sha256": "b534e465949558eec2597b04f5092b5e161236a68dfbfd04d547592ac3964308"
+        }
+      ],
+      "file": "dist/integration/mineradio/vendor/opencc-cn2t.js",
+      "bytes": 1100656,
+      "sha256": "d66d920069ab526db08c6f2bc15fcf6feb7d07de3cf98e7e27c0aaf7d136baee"
+    },
+    {
+      "name": "Three.js",
+      "version": "r128",
+      "notices": [
+        {
+          "path": "vendors/LICENSE-Three.js.txt",
+          "bytes": 1081,
+          "sha256": "7dddf7c5b8fd10ee654db8857d75d104b5557889aa5a91fc4ca545ea7c07062f"
+        }
+      ],
+      "file": "dist/integration/mineradio/vendor/three.r128.min.js",
+      "bytes": 603445,
+      "sha256": "9274bbcec8d96168626c732b5d31c775aa8cfb7eaa0599bec0c175908a2c1ce2"
+    }
+  ],
+  "backendReplacements": [
+    {
+      "name": "cache-content-type",
+      "version": "2.1.0",
+      "consumer": "koa",
+      "sourceDirectory": "dev/integration/vendor/cache-content-type",
+      "files": [
+        {
+          "path": "dist/commonjs/index.js",
+          "bytes": 1458,
+          "sha256": "31115617c86cb544fd32f9666fc7e86588c3040d4a19a8659fa743700df9739b"
+        },
+        {
+          "path": "dist/commonjs/package.json",
+          "bytes": 25,
+          "sha256": "8005a3491db7d92f36ac66369861589f9c47123d3a7c71e643fc2c06168cd45a"
+        },
+        {
+          "path": "package.json",
+          "bytes": 1723,
+          "sha256": "17e0bae4a2b15f83b1131d128f45f709bad9619cd71f2f1fbe5a8f91dfed4966"
+        },
+        {
+          "path": "LICENSE",
+          "bytes": 1099,
+          "sha256": "db1cb24ed79e242f829c4c123dfdf1023ed760bc8e88607e1b0316ca8cd6a906"
+        },
+        {
+          "path": "src/index.ts",
+          "bytes": 426,
+          "sha256": "7e0a13e4949fdb8013655c9ec8fdba5c62410b0e96f1fe6492463c640aaa6766"
+        }
+      ],
+      "archive": "dev/integration/vendor/cache-content-type-2.1.0.tgz",
+      "resolved": "https://registry.npmjs.org/cache-content-type/-/cache-content-type-2.1.0.tgz",
+      "archiveSha256": "2ee7f6c454996e6780d41eb31309910cbe6cde522bd939aeb77ef5d3beb4315f",
+      "provenanceSha256": "de639d7640471f4003059c059e15b7e4b946fd16c4e49f796e6d4a5fc2e378f7",
+      "origin": {
+        "schema": 1,
+        "name": "cache-content-type",
+        "version": "2.1.0",
+        "modified": false,
+        "source": "Verbatim published npm 2.1.0 package bytes. The separate integration entry adapter preserves its getType implementation and supplies Koa 2 a callable CommonJS export.",
+        "repository": "https://github.com/node-modules/cache-content-type",
+        "revision": "b4d59700bf3f0d4aad25db504cb316526fc029fa",
+        "tarballUrl": "https://registry.npmjs.org/cache-content-type/-/cache-content-type-2.1.0.tgz",
+        "tarballSha256": "2ee7f6c454996e6780d41eb31309910cbe6cde522bd939aeb77ef5d3beb4315f",
+        "license": "MIT"
+      },
+      "consumerVersion": "2.16.4",
+      "nodePackagePath": "node_modules/cache-content-type",
+      "verified": "archive integrity, source and installed code/license bytes, consumer require.resolve",
+      "asarPackagePaths": [
+        "node_modules/cache-content-type"
+      ],
+      "packageMetadataNormalization": [
+        {
+          "path": "node_modules/cache-content-type/dist/commonjs/package.json",
+          "originalSha256": "8005a3491db7d92f36ac66369861589f9c47123d3a7c71e643fc2c06168cd45a",
+          "packagedSha256": "8005a3491db7d92f36ac66369861589f9c47123d3a7c71e643fc2c06168cd45a",
+          "removedFields": [],
+          "verification": "Only known scripts/keywords omissions and JSON formatting allowed; all remaining fields equal."
+        },
+        {
+          "path": "node_modules/cache-content-type/package.json",
+          "originalSha256": "17e0bae4a2b15f83b1131d128f45f709bad9619cd71f2f1fbe5a8f91dfed4966",
+          "packagedSha256": "5d56d3968269e135d9432e92569a1e9075ac0065e578b906a459027cae4af352",
+          "removedFields": [
+            "scripts",
+            "keywords"
+          ],
+          "verification": "Only known scripts/keywords omissions and JSON formatting allowed; all remaining fields equal."
+        }
+      ]
+    },
+    {
+      "name": "koa-compose",
+      "version": "4.2.0",
+      "consumer": "koa-router",
+      "sourceDirectory": "dev/integration/vendor/koa-compose",
+      "files": [
+        {
+          "path": "index.js",
+          "bytes": 1114,
+          "sha256": "cdb00fa9273d68c23d13a7b5470a8a384fd4a1836236dd87f33a07c0c2a397ea"
+        },
+        {
+          "path": "LICENSE",
+          "bytes": 1093,
+          "sha256": "44a7ca64cb59fbe6481a7260e4317ff0177127a6e50e6077a9bfa60f89f905a2"
+        },
+        {
+          "path": "package.json",
+          "bytes": 510,
+          "sha256": "aeecbe9d7b3ea0cdbd4062bbeb87e828a7e616247dbbab488c6bf515bcb9c6a6"
+        }
+      ],
+      "archive": "dev/integration/vendor/koa-compose-903480c-official.tgz",
+      "resolved": "https://codeload.github.com/koajs/compose/tar.gz/903480c36957776f8561a33a840cdd0a06ad611f",
+      "archiveSha256": "140dfcf376b17b524812b9fc05479e639bde41509516ba26f85c86709aa7813f",
+      "provenanceSha256": "05b6e15cb35392c0e6652ef45f11ad6ad3bd8b1e2f4bc1f53c940dd36e0c2a9e",
+      "origin": {
+        "schema": 1,
+        "package": "koa-compose",
+        "upstreamPackageVersion": "4.2.0",
+        "origin": "official koajs/compose fixed Git commit; not the original npm koa-compose@4.2.0 release",
+        "revision": "903480c36957776f8561a33a840cdd0a06ad611f",
+        "revisionUrl": "https://github.com/koajs/compose/commit/903480c36957776f8561a33a840cdd0a06ad611f",
+        "license": "MIT",
+        "files": [
+          {
+            "file": "index.js",
+            "url": "https://raw.githubusercontent.com/koajs/compose/903480c36957776f8561a33a840cdd0a06ad611f/index.js",
+            "bytes": 1114,
+            "sha256": "cdb00fa9273d68c23d13a7b5470a8a384fd4a1836236dd87f33a07c0c2a397ea"
+          },
+          {
+            "file": "LICENSE",
+            "url": "https://raw.githubusercontent.com/koajs/compose/903480c36957776f8561a33a840cdd0a06ad611f/LICENSE",
+            "bytes": 1093,
+            "sha256": "44a7ca64cb59fbe6481a7260e4317ff0177127a6e50e6077a9bfa60f89f905a2"
+          },
+          {
+            "file": "package.json",
+            "url": "https://raw.githubusercontent.com/koajs/compose/903480c36957776f8561a33a840cdd0a06ad611f/package.json",
+            "bytes": 510,
+            "sha256": "aeecbe9d7b3ea0cdbd4062bbeb87e828a7e616247dbbab488c6bf515bcb9c6a6"
+          }
+        ],
+        "originalNpmRelease": {
+          "version": "4.2.0",
+          "gitHead": "abdaf85dd99fddd4fea6f2ab05ba4e802ed1a234",
+          "indexSha256": "77044f5bea057011f52aa351cefd53032939e9ac36de2bdd983883eaf76d834f",
+          "licenseTextIncluded": false
+        },
+        "modifications": "None. index.js, LICENSE and package.json are verbatim official source bytes; this separate provenance file was added by the Folia Mineradio integration."
+      },
+      "consumerVersion": "7.4.0",
+      "nodePackagePath": "node_modules/koa-compose",
+      "verified": "archive integrity, source and installed code/license bytes, consumer require.resolve",
+      "asarPackagePaths": [
+        "node_modules/koa-compose"
+      ],
+      "packageMetadataNormalization": [
+        {
+          "path": "node_modules/koa-compose/package.json",
+          "originalSha256": "aeecbe9d7b3ea0cdbd4062bbeb87e828a7e616247dbbab488c6bf515bcb9c6a6",
+          "packagedSha256": "6e205cc6072dce7b431a33a1b05ba389fa63b0b56fd488b5750a7828ca53064b",
+          "removedFields": [
+            "scripts",
+            "keywords"
+          ],
+          "verification": "Only known scripts/keywords omissions and JSON formatting allowed; all remaining fields equal."
+        }
+      ]
+    }
+  ],
+  "packages": [
+    {
+      "name": "@electron-internal/extract-zip",
+      "version": "1.0.5",
+      "nodePackages": [],
+      "renderedModuleCount": 0,
+      "codeShipped": false,
+      "noticeStatus": "publisher-text-missing",
+      "scopeStatus": "not-in-node-or-renderer-code"
+    },
+    {
+      "name": "@epic-web/invariant",
+      "version": "1.0.0",
+      "nodePackages": [],
+      "renderedModuleCount": 0,
+      "codeShipped": false,
+      "noticeStatus": "publisher-text-missing",
+      "scopeStatus": "not-in-node-or-renderer-code"
+    },
+    {
+      "name": "@mediapipe/tasks-vision",
+      "version": "0.10.17",
+      "nodePackages": [],
+      "renderedModuleCount": 0,
+      "codeShipped": false,
+      "noticeStatus": "project-notice-only",
+      "scopeStatus": "not-in-node-or-renderer-code"
+    },
+    {
+      "name": "@rolldown/binding-win32-x64-msvc",
+      "version": "1.2.11",
+      "nodePackages": [],
+      "renderedModuleCount": 0,
+      "codeShipped": false,
+      "noticeStatus": "project-notice-only",
+      "scopeStatus": "not-in-node-or-renderer-code"
+    },
+    {
+      "name": "cache-content-type",
+      "version": "1.0.1",
+      "nodePackages": [],
+      "renderedModuleCount": 0,
+      "codeShipped": false,
+      "noticeStatus": "retired-not-installed",
+      "scopeStatus": "not-in-node-or-renderer-code"
+    },
+    {
+      "name": "chromium-pickle-js",
+      "version": "0.2.0",
+      "nodePackages": [],
+      "renderedModuleCount": 0,
+      "codeShipped": false,
+      "noticeStatus": "publisher-text-missing",
+      "scopeStatus": "not-in-node-or-renderer-code"
+    },
+    {
+      "name": "compare-version",
+      "version": "0.1.2",
+      "nodePackages": [],
+      "renderedModuleCount": 0,
+      "codeShipped": false,
+      "noticeStatus": "publisher-text-missing",
+      "scopeStatus": "not-in-node-or-renderer-code"
+    },
+    {
+      "name": "cross-dirname",
+      "version": "0.1.0",
+      "nodePackages": [],
+      "renderedModuleCount": 0,
+      "codeShipped": false,
+      "noticeStatus": "publisher-text-missing",
+      "scopeStatus": "not-in-node-or-renderer-code"
+    },
+    {
+      "name": "err-code",
+      "version": "2.0.3",
+      "nodePackages": [],
+      "renderedModuleCount": 0,
+      "codeShipped": false,
+      "noticeStatus": "publisher-text-missing",
+      "scopeStatus": "not-in-node-or-renderer-code"
+    },
+    {
+      "name": "filelist",
+      "version": "1.0.6",
+      "nodePackages": [],
+      "renderedModuleCount": 0,
+      "codeShipped": false,
+      "noticeStatus": "project-notice-only",
+      "scopeStatus": "not-in-node-or-renderer-code"
+    },
+    {
+      "name": "gzip",
+      "version": "0.1.0",
+      "nodePackages": [
+        {
+          "path": "node_modules/gzip",
+          "codeFiles": 1,
+          "nonemptyCodeFiles": 0,
+          "codeBytes": 0
+        }
+      ],
+      "renderedModuleCount": 0,
+      "codeShipped": false,
+      "noticeStatus": "publisher-text-missing",
+      "scopeStatus": "package-metadata-or-empty-code-only"
+    },
+    {
+      "name": "https",
+      "version": "1.0.0",
+      "nodePackages": [
+        {
+          "path": "node_modules/https",
+          "codeFiles": 0,
+          "nonemptyCodeFiles": 0,
+          "codeBytes": 0
+        }
+      ],
+      "renderedModuleCount": 0,
+      "codeShipped": false,
+      "noticeStatus": "publisher-text-missing",
+      "scopeStatus": "package-metadata-or-empty-code-only"
+    },
+    {
+      "name": "is-regexp",
+      "version": "1.0.0",
+      "nodePackages": [],
+      "renderedModuleCount": 0,
+      "codeShipped": false,
+      "noticeStatus": "project-notice-only",
+      "scopeStatus": "not-in-node-or-renderer-code"
+    },
+    {
+      "name": "jake",
+      "version": "10.9.4",
+      "nodePackages": [],
+      "renderedModuleCount": 0,
+      "codeShipped": false,
+      "noticeStatus": "project-notice-only",
+      "scopeStatus": "not-in-node-or-renderer-code"
+    },
+    {
+      "name": "keyv",
+      "version": "4.5.4",
+      "nodePackages": [],
+      "renderedModuleCount": 0,
+      "codeShipped": false,
+      "noticeStatus": "publisher-text-missing",
+      "scopeStatus": "not-in-node-or-renderer-code"
+    },
+    {
+      "name": "koa-compose",
+      "version": "4.1.0",
+      "nodePackages": [],
+      "renderedModuleCount": 0,
+      "codeShipped": false,
+      "noticeStatus": "retired-not-installed",
+      "scopeStatus": "not-in-node-or-renderer-code"
+    },
+    {
+      "name": "koa-compose",
+      "version": "3.2.1",
+      "nodePackages": [],
+      "renderedModuleCount": 0,
+      "codeShipped": false,
+      "noticeStatus": "retired-not-installed",
+      "scopeStatus": "not-in-node-or-renderer-code"
+    },
+    {
+      "name": "koa-static",
+      "version": "5.0.0",
+      "nodePackages": [
+        {
+          "path": "node_modules/koa-static",
+          "codeFiles": 1,
+          "nonemptyCodeFiles": 1,
+          "codeBytes": 1418
+        }
+      ],
+      "renderedModuleCount": 0,
+      "codeShipped": true,
+      "noticeStatus": "documents-retained",
+      "scopeStatus": "shipping-code-notice-retained"
+    },
+    {
+      "name": "lazy-val",
+      "version": "1.0.5",
+      "nodePackages": [],
+      "renderedModuleCount": 0,
+      "codeShipped": false,
+      "noticeStatus": "publisher-text-missing",
+      "scopeStatus": "not-in-node-or-renderer-code"
+    },
+    {
+      "name": "maath",
+      "version": "0.10.8",
+      "nodePackages": [],
+      "renderedModuleCount": 0,
+      "codeShipped": false,
+      "noticeStatus": "project-notice-only",
+      "scopeStatus": "not-in-node-or-renderer-code"
+    },
+    {
+      "name": "node-api-version",
+      "version": "0.2.1",
+      "nodePackages": [],
+      "renderedModuleCount": 0,
+      "codeShipped": false,
+      "noticeStatus": "publisher-text-missing",
+      "scopeStatus": "not-in-node-or-renderer-code"
+    },
+    {
+      "name": "read-binary-file-arch",
+      "version": "1.0.6",
+      "nodePackages": [],
+      "renderedModuleCount": 0,
+      "codeShipped": false,
+      "noticeStatus": "publisher-text-missing",
+      "scopeStatus": "not-in-node-or-renderer-code"
+    },
+    {
+      "name": "stackback",
+      "version": "0.0.2",
+      "nodePackages": [],
+      "renderedModuleCount": 0,
+      "codeShipped": false,
+      "noticeStatus": "publisher-text-missing",
+      "scopeStatus": "not-in-node-or-renderer-code"
+    },
+    {
+      "name": "stats-gl",
+      "version": "2.4.2",
+      "nodePackages": [],
+      "renderedModuleCount": 0,
+      "codeShipped": false,
+      "noticeStatus": "publisher-text-missing",
+      "scopeStatus": "not-in-node-or-renderer-code"
+    },
+    {
+      "name": "temp-file",
+      "version": "3.4.0",
+      "nodePackages": [],
+      "renderedModuleCount": 0,
+      "codeShipped": false,
+      "noticeStatus": "publisher-text-missing",
+      "scopeStatus": "not-in-node-or-renderer-code"
+    },
+    {
+      "name": "tmp-promise",
+      "version": "3.0.3",
+      "nodePackages": [],
+      "renderedModuleCount": 0,
+      "codeShipped": false,
+      "noticeStatus": "publisher-text-missing",
+      "scopeStatus": "not-in-node-or-renderer-code"
+    },
+    {
+      "name": "cache-content-type",
+      "version": "2.1.0",
+      "nodePackages": [
+        {
+          "path": "node_modules/cache-content-type",
+          "codeFiles": 3,
+          "nonemptyCodeFiles": 3,
+          "codeBytes": 3100
+        }
+      ],
+      "renderedModuleCount": 0,
+      "codeShipped": true,
+      "noticeStatus": "documents-retained",
+      "scopeStatus": "shipping-code-notice-retained"
+    },
+    {
+      "name": "koa-compose",
+      "version": "4.2.0",
+      "nodePackages": [
+        {
+          "path": "node_modules/koa-compose",
+          "codeFiles": 1,
+          "nonemptyCodeFiles": 1,
+          "codeBytes": 1114
+        }
+      ],
+      "renderedModuleCount": 0,
+      "codeShipped": true,
+      "noticeStatus": "documents-retained",
+      "scopeStatus": "shipping-code-notice-retained"
+    }
+  ],
+  "shippingCodeNoticeGaps": [],
+  "scopeLimit": "Checks Node package code, finalized renderer module provenance and all four copied browser vendor scripts with their full notices. Metadata is not counted as code. Fonts, Electron/Chromium and FFmpeg retain their separate notices."
+}

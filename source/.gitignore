@@ -13,3 +13,11 @@
 /FoliaMineradio/.data/
 /FoliaMineradio/.venv/
 /FoliaMineradio/models/
+
+# Current wallpaper standalone source: recipients generate these locally.
+/FoliaWallpaper-10.10/outputs/
+/FoliaWallpaper-10.10/.npm-cache/
+/FoliaWallpaper-10.10/source/folia-major/node_modules/
+/FoliaWallpaper-10.10/source/folia-major/dist-wallpaper/
+/FoliaWallpaper-10.10/source/folia-major/dist-wallpaper-lyrics/
+/FoliaWallpaper-10.10/source/folia-major/.env.local

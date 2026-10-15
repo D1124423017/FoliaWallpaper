@@ -1,0 +1,59 @@
+/* src/wallpaper/controls.css — theme-aware desktop menu; only visible controls receive mouse input. */
+.wallpaper-controls { position: fixed; inset: 0; z-index: 40; pointer-events: none; color: var(--wallpaper-text); font-family: system-ui, sans-serif; }
+.wallpaper-controls button { cursor: pointer; }
+.wallpaper-controls button:focus-visible, .wallpaper-controls input:focus-visible, .wallpaper-controls select:focus-visible { outline: 2px solid var(--wallpaper-accent); outline-offset: 3px; }
+.wallpaper-controls-trigger { position: absolute; right: 24px; bottom: 56px; width: 44px; height: 44px; display: grid; place-items: center; border-radius: 50%; border: 1px solid var(--control-border); background: color-mix(in srgb, var(--wallpaper-background) 90%, var(--wallpaper-text) 10%); color: inherit; pointer-events: auto; opacity: .72; transition: opacity .15s; }
+.wallpaper-controls-trigger:hover { opacity: 1; }
+.wallpaper-controls-panel { position: absolute; width: 380px; max-width: calc(100vw - 32px); max-height: min(860px, calc(100vh - 116px)); right: 24px; bottom: 110px; display: flex; flex-direction: column; border-radius: 24px; border: 1px solid var(--control-border); background: var(--wallpaper-background); background: color-mix(in srgb, var(--wallpaper-background) 97%, var(--wallpaper-text) 3%); box-shadow: 0 14px 50px #0004; pointer-events: auto; overflow: hidden; }
+.wallpaper-controls-panel header { display: flex; flex-shrink: 0; align-items: center; justify-content: space-between; padding: 18px 20px 14px; border-bottom: 1px solid var(--control-border); }
+.wallpaper-controls-panel header strong { font-size: 15px; }
+.wallpaper-controls-panel header small { display: block; font-size: 10px; opacity: .55; margin-top: 4px; }
+.wallpaper-controls-panel header button { display: grid; place-items: center; border: 0; background: transparent; color: inherit; padding: 8px; border-radius: 10px; }
+.wallpaper-controls-scroll-area { display: flex; flex-direction: column; min-height: 0; flex: 1 1 auto; }
+.wallpaper-controls-scroll { min-height: 0; flex: 1 1 auto; overflow-y: auto; overflow-x: hidden; overscroll-behavior: contain; scrollbar-gutter: stable; scrollbar-width: auto; scrollbar-color: var(--wallpaper-accent) var(--control-border); padding: 16px 18px 20px; }
+.wallpaper-controls-scroll:focus-visible { outline: 2px solid var(--wallpaper-accent); outline-offset: -3px; }
+.wallpaper-controls-scroll-actions { display: flex; flex-shrink: 0; align-items: center; justify-content: space-between; gap: 8px; padding: 10px 14px; border-top: 1px solid var(--control-border); }
+.wallpaper-controls-scroll-actions button { display: flex; align-items: center; justify-content: center; gap: 4px; min-height: 34px; padding: 6px 10px; border: 1px solid var(--control-border); border-radius: 9px; background: transparent; color: inherit; font-size: 11px; }
+.wallpaper-controls-scroll-actions button:disabled { opacity: .3; cursor: default; }
+.wallpaper-controls-scroll-actions small { text-align: center; font-size: 10px; line-height: 1.5; opacity: .65; }
+.wallpaper-controls [role="listbox"] { overscroll-behavior: contain; scrollbar-width: auto; scrollbar-color: var(--wallpaper-accent) transparent; }
+.wallpaper-controls-track { display: grid; text-align: center; justify-items: center; gap: 4px; margin-bottom: 14px; }
+.wallpaper-controls-track img, .wallpaper-controls-cover-placeholder { width: 148px; height: 148px; border-radius: 16px; object-fit: cover; background: color-mix(in srgb, var(--wallpaper-text) 8%, var(--wallpaper-background)); }
+.wallpaper-controls-cover-placeholder { display: grid; place-items: center; opacity: .55; }
+.wallpaper-controls-track strong { margin-top: 8px; font-size: 12px; max-width: 100%; overflow-wrap: anywhere; }
+.wallpaper-controls-track small { font-size: 11px; opacity: .6; }
+.wallpaper-controls-panel nav { display: flex; gap: 4px; margin: 14px 0; padding: 4px; background: color-mix(in srgb, var(--wallpaper-text) 5%, transparent); border-radius: 12px; }
+.wallpaper-controls-panel nav button { display: flex; align-items: center; justify-content: center; gap: 5px; flex: 1; padding: 8px 4px; border-radius: 9px; border: 0; background: transparent; color: inherit; font-size: 11px; opacity: .6; }
+.wallpaper-controls-panel nav button[aria-pressed="true"] { background: color-mix(in srgb, var(--wallpaper-text) 13%, transparent); opacity: 1; }
+.wallpaper-control-basics { display: grid; gap: 16px; }
+.wallpaper-control-basics label { display: grid; gap: 8px; font-size: 12px; }
+.wallpaper-control-basics label > span { display: flex; align-items: center; justify-content: space-between; }
+.wallpaper-control-basics output { font: 11px monospace; opacity: .6; }
+.wallpaper-control-basics select { border: 1px solid var(--control-border); border-radius: 10px; padding: 9px 10px; color: inherit; background: var(--wallpaper-background); width: 100%; }
+.wallpaper-control-basics p, .wallpaper-appearance-transfer p { font-size: 11px; line-height: 1.65; opacity: .6; margin: 0; }
+.wallpaper-control-basics input[type="range"], .wallpaper-control-range { width: 100%; accent-color: var(--wallpaper-accent); }
+.wallpaper-control-basics label.wallpaper-control-check { display: flex; align-items: center; justify-content: space-between; }
+.wallpaper-control-check input { accent-color: var(--wallpaper-accent); }
+.wallpaper-appearance-transfer { margin-top: 24px; display: grid; gap: 12px; }
+.wallpaper-control-actions { display: flex; gap: 8px; }
+.wallpaper-control-actions button, .wallpaper-controls-reset { border: 1px solid var(--control-border); border-radius: 10px; padding: 9px 10px; display: flex; align-items: center; justify-content: center; gap: 6px; color: inherit; background: transparent; font-size: 11px; }
+.wallpaper-control-actions button { flex: 1; }
+.wallpaper-controls-reset { margin-top: 14px; width: 100%; opacity: .65; }
+@media (max-height: 760px) { .wallpaper-controls-track img, .wallpaper-controls-cover-placeholder { width: 88px; height: 88px; } }
+@media (max-width: 500px) { .wallpaper-controls-panel { right: 16px; bottom: 80px; max-height: calc(100vh - 100px); } .wallpaper-controls-trigger { right: 16px; bottom: 24px; } }
+.wallpaper-mineradio-layer { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; z-index: 0; pointer-events: none; }
+.wallpaper-folia-layer { position: absolute; inset: 0; z-index: 1; }
+.wallpaper-mineradio-error { position: absolute; left: 24px; top: 24px; z-index: 3; padding: 12px; background: #241e28; color: #fff; }
+.wallpaper-mineradio-controls { margin-bottom: 14px; }
+.wallpaper-controls .wallpaper-select { border: 1px solid var(--control-border); border-radius: 10px; padding: 9px 10px; color: inherit; background: var(--wallpaper-background); width: 100%; display: flex; align-items: center; justify-content: space-between; gap: 8px; text-align: left; font-size: 12px; }
+.wallpaper-select > span { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.wallpaper-select > svg { flex-shrink: 0; }
+.wallpaper-source-controls { display: grid; grid-template-columns: minmax(0, 1fr); min-width: 0; gap: 8px; margin-bottom: 20px; padding-bottom: 16px; border-bottom: 1px solid var(--control-border); }
+.wallpaper-source-controls > .relative { min-width: 0; }
+.wallpaper-source-controls > label { font-size: 12px; font-weight: 600; }
+.wallpaper-source-controls p, .wallpaper-source-controls small { margin: 0; font-size: 11px; line-height: 1.65; overflow-wrap: anywhere; }
+.wallpaper-source-controls small { opacity: .6; }
+.wallpaper-source-controls > .relative > .absolute { top: calc(100% + 6px); width: 100%; transform: none !important; opacity: 1 !important; }
+.wallpaper-source-controls [role="listbox"] { max-height: 240px; }
+.wallpaper-source-controls [role="option"] { justify-content: flex-start; text-align: left; min-height: 44px; padding: 10px 12px; }
+.wallpaper-source-controls [role="option"] > span:last-child { font-size: 12px; line-height: 1.5; overflow-wrap: anywhere; }

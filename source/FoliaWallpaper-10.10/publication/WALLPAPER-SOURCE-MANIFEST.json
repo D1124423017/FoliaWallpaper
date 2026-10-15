@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "version": "0.7.17-wallpaper.10.10",
+  "releaseTag": "wallpaper.10.10",
+  "sourceUrl": "https://github.com/D1124423017/FoliaWallpaper/releases/tag/wallpaper.10.10",
+  "published": false,
+  "sourceSnapshot": {
+    "file": "Folia-Mineradio-Source-0.7.17-integration.4-license.1.zip",
+    "sha256": "663b9899158df1c7ce9308fd2425c8403b883cbcf6523763d37bf735c1ebc112",
+    "sourceFiles": 3507
+  },
+  "renderer": {
+    "path": "FoliaWallpaper/assets/wallpaper-Bo0vaJRB.js",
+    "sha256": "ea1fd64ce8ffe815781502e4de5aa5288e70601e41ca039096b0759bc21627a0"
+  },
+  "service": {
+    "sha256": "771b5598aca59d4823e8eb7d4743ead00a17efd94bb76b4f7ad8cba0b21e7f49",
+    "dependencies": 290
+  },
+  "defaults": {
+    "theme": "cover",
+    "demo": false,
+    "localAudio": false,
+    "geminiAudioUpload": false,
+    "wheel": false
+  },
+  "excluded": [
+    "personal API keys",
+    "pairing tokens",
+    ".data",
+    "audio models/environments",
+    "recordings",
+    "Sonic presets 7 and 8"
+  ],
+  "verificationLimit": "Assembly and file integrity only; no service or wallpaper was started by this script.",
+  "bundleMetadata": "publication/wallpaper-metadata",
+  "frozenManifest": "publication/FROZEN-SOURCE-MANIFEST.json",
+  "rebuildCommand": "node publication/prepare-wallpaper-10-10.mjs --rebuild --install-service",
+  "serviceLicenseCoverage": {
+    "serviceDependencyCopies": 290,
+    "documentsRetained": 288,
+    "metadataOnlyOrEmptyImplementation": [
+      {
+        "name": "gzip",
+        "version": "0.1.0",
+        "limitation": "No full license document found in the published package or official repository at the published gitHead; publisher license declaration is retained, not a replacement license. Published src/gzip.js is empty (0 bytes); the record is an installed dependency graph entry, not evidence of a working GZIP feature."
+      },
+      {
+        "name": "https",
+        "version": "1.0.0",
+        "limitation": "Published package supplies no full license text and no gitHead. The official repository check did not establish an original-version notice; publisher declaration is retained, not a replacement license. Published package contains only package.json, with no implementation; the record is an installed dependency graph entry, not Node.js built-in https licensing."
+      }
+    ],
+    "missingImplementationNotices": [],
+    "statement": "Service-specific scope, separate from the retained player/build dependency union. Metadata declarations are never counted as full license text."
+  }
+}

@@ -1,0 +1,226 @@
+{
+  "dependencyVersions": 1042,
+  "documentsRetained": 1020,
+  "projectNoticeOnly": 6,
+  "publisherTextMissing": 16,
+  "unresolved": [
+    {
+      "name": "@electron-internal/extract-zip",
+      "version": "1.0.5",
+      "license": "BSD-2-Clause",
+      "usage": [
+        "build-or-test-dependency"
+      ],
+      "noticeStatus": "publisher-text-missing",
+      "noticeLimitation": "No full license document found in the published package or official repository at the published gitHead; publisher license declaration is retained, not a replacement license. Current official project license differs from this package version declaring BSD-2-Clause; it was deliberately not substituted."
+    },
+    {
+      "name": "@epic-web/invariant",
+      "version": "1.0.0",
+      "license": "MIT",
+      "usage": [
+        "build-or-test-dependency"
+      ],
+      "noticeStatus": "publisher-text-missing",
+      "noticeLimitation": "No full license document found in the published package or official repository at the published gitHead; publisher license declaration is retained, not a replacement license."
+    },
+    {
+      "name": "@mediapipe/tasks-vision",
+      "version": "0.10.17",
+      "license": "Apache-2.0",
+      "usage": [
+        "build-or-test-dependency"
+      ],
+      "noticeStatus": "project-notice-only"
+    },
+    {
+      "name": "@rolldown/binding-win32-x64-msvc",
+      "version": "1.2.11",
+      "license": "MIT",
+      "usage": [
+        "build-or-test-dependency"
+      ],
+      "noticeStatus": "project-notice-only"
+    },
+    {
+      "name": "chromium-pickle-js",
+      "version": "0.2.0",
+      "license": "MIT",
+      "usage": [
+        "build-or-test-dependency"
+      ],
+      "noticeStatus": "publisher-text-missing",
+      "noticeLimitation": "No full license document found in the published package or official repository at the published gitHead; publisher license declaration is retained, not a replacement license."
+    },
+    {
+      "name": "compare-version",
+      "version": "0.1.2",
+      "license": "MIT",
+      "usage": [
+        "build-or-test-dependency"
+      ],
+      "noticeStatus": "publisher-text-missing",
+      "noticeLimitation": "Published package supplies no full license text and no gitHead. The official repository check did not establish an original-version notice; publisher declaration is retained, not a replacement license."
+    },
+    {
+      "name": "cross-dirname",
+      "version": "0.1.0",
+      "license": "MIT",
+      "usage": [
+        "build-or-test-dependency"
+      ],
+      "noticeStatus": "publisher-text-missing",
+      "noticeLimitation": "No full license document found in the published package or official repository at the published gitHead; publisher license declaration is retained, not a replacement license."
+    },
+    {
+      "name": "err-code",
+      "version": "2.0.3",
+      "license": "MIT",
+      "usage": [
+        "build-or-test-dependency"
+      ],
+      "noticeStatus": "publisher-text-missing",
+      "noticeLimitation": "No full license document found in the published package or official repository at the published gitHead; publisher license declaration is retained, not a replacement license."
+    },
+    {
+      "name": "filelist",
+      "version": "1.0.6",
+      "license": "Apache-2.0",
+      "usage": [
+        "build-or-test-dependency",
+        "generated-renderer-asset"
+      ],
+      "noticeStatus": "project-notice-only"
+    },
+    {
+      "name": "gzip",
+      "version": "0.1.0",
+      "license": "MIT",
+      "usage": [
+        "electron-runtime-dependency"
+      ],
+      "noticeStatus": "publisher-text-missing",
+      "noticeLimitation": "No full license document found in the published package or official repository at the published gitHead; publisher license declaration is retained, not a replacement license. Published src/gzip.js is empty (0 bytes); the record is an installed dependency graph entry, not evidence of a working GZIP feature."
+    },
+    {
+      "name": "https",
+      "version": "1.0.0",
+      "license": "ISC",
+      "usage": [
+        "electron-runtime-dependency"
+      ],
+      "noticeStatus": "publisher-text-missing",
+      "noticeLimitation": "Published package supplies no full license text and no gitHead. The official repository check did not establish an original-version notice; publisher declaration is retained, not a replacement license. Published package contains only package.json, with no implementation; the record is an installed dependency graph entry, not Node.js built-in https licensing."
+    },
+    {
+      "name": "is-regexp",
+      "version": "1.0.0",
+      "license": "MIT",
+      "usage": [
+        "build-or-test-dependency",
+        "generated-renderer-asset"
+      ],
+      "noticeStatus": "project-notice-only"
+    },
+    {
+      "name": "jake",
+      "version": "10.9.4",
+      "license": "Apache-2.0",
+      "usage": [
+        "build-or-test-dependency",
+        "generated-renderer-asset"
+      ],
+      "noticeStatus": "project-notice-only"
+    },
+    {
+      "name": "keyv",
+      "version": "4.5.4",
+      "license": "MIT",
+      "usage": [
+        "build-or-test-dependency"
+      ],
+      "noticeStatus": "publisher-text-missing",
+      "noticeLimitation": "Published package supplies no full license text and no gitHead. The official repository check did not establish an original-version notice; publisher declaration is retained, not a replacement license. Current official project LICENSE is titled MIT but contains copyright and warranty text without the permission grant; it does not establish a complete original-version license and was not substituted."
+    },
+    {
+      "name": "lazy-val",
+      "version": "1.0.5",
+      "license": "MIT",
+      "usage": [
+        "build-or-test-dependency",
+        "electron-runtime-dependency"
+      ],
+      "noticeStatus": "publisher-text-missing",
+      "noticeLimitation": "No full license document found in the published package or official repository at the published gitHead; publisher license declaration is retained, not a replacement license."
+    },
+    {
+      "name": "maath",
+      "version": "0.10.8",
+      "license": "MIT",
+      "usage": [
+        "build-or-test-dependency"
+      ],
+      "noticeStatus": "project-notice-only"
+    },
+    {
+      "name": "node-api-version",
+      "version": "0.2.1",
+      "license": "MIT",
+      "usage": [
+        "build-or-test-dependency"
+      ],
+      "noticeStatus": "publisher-text-missing",
+      "noticeLimitation": "Published package supplies no full license text and no gitHead. The official repository check did not establish an original-version notice; publisher declaration is retained, not a replacement license."
+    },
+    {
+      "name": "read-binary-file-arch",
+      "version": "1.0.6",
+      "license": "MIT",
+      "usage": [
+        "build-or-test-dependency"
+      ],
+      "noticeStatus": "publisher-text-missing",
+      "noticeLimitation": "Published package supplies no full license text and no gitHead. The official repository check did not establish an original-version notice; publisher declaration is retained, not a replacement license."
+    },
+    {
+      "name": "stackback",
+      "version": "0.0.2",
+      "license": "MIT",
+      "usage": [
+        "build-or-test-dependency"
+      ],
+      "noticeStatus": "publisher-text-missing",
+      "noticeLimitation": "Published package supplies no full license text and no gitHead. The official repository check did not establish an original-version notice; publisher declaration is retained, not a replacement license."
+    },
+    {
+      "name": "stats-gl",
+      "version": "2.4.2",
+      "license": "MIT",
+      "usage": [
+        "build-or-test-dependency"
+      ],
+      "noticeStatus": "publisher-text-missing",
+      "noticeLimitation": "No full license document found in the published package or official repository at the published gitHead; publisher license declaration is retained, not a replacement license."
+    },
+    {
+      "name": "temp-file",
+      "version": "3.4.0",
+      "license": "MIT",
+      "usage": [
+        "build-or-test-dependency"
+      ],
+      "noticeStatus": "publisher-text-missing",
+      "noticeLimitation": "No full license document found in the published package or official repository at the published gitHead; publisher license declaration is retained, not a replacement license."
+    },
+    {
+      "name": "tmp-promise",
+      "version": "3.0.3",
+      "license": "MIT",
+      "usage": [
+        "build-or-test-dependency"
+      ],
+      "noticeStatus": "publisher-text-missing",
+      "noticeLimitation": "No full license document found in the published package or official repository at the published gitHead; publisher license declaration is retained, not a replacement license."
+    }
+  ]
+}

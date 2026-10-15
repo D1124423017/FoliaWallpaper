@@ -1,0 +1,120 @@
+[
+  {
+    "name": "cache-content-type",
+    "version": "2.1.0",
+    "consumer": "koa",
+    "sourceDirectory": "dev/integration/vendor/cache-content-type",
+    "files": [
+      {
+        "path": "dist/commonjs/index.js",
+        "bytes": 1458,
+        "sha256": "31115617c86cb544fd32f9666fc7e86588c3040d4a19a8659fa743700df9739b"
+      },
+      {
+        "path": "dist/commonjs/package.json",
+        "bytes": 25,
+        "sha256": "8005a3491db7d92f36ac66369861589f9c47123d3a7c71e643fc2c06168cd45a"
+      },
+      {
+        "path": "package.json",
+        "bytes": 1723,
+        "sha256": "17e0bae4a2b15f83b1131d128f45f709bad9619cd71f2f1fbe5a8f91dfed4966"
+      },
+      {
+        "path": "LICENSE",
+        "bytes": 1099,
+        "sha256": "db1cb24ed79e242f829c4c123dfdf1023ed760bc8e88607e1b0316ca8cd6a906"
+      },
+      {
+        "path": "src/index.ts",
+        "bytes": 426,
+        "sha256": "7e0a13e4949fdb8013655c9ec8fdba5c62410b0e96f1fe6492463c640aaa6766"
+      }
+    ],
+    "archive": "dev/integration/vendor/cache-content-type-2.1.0.tgz",
+    "resolved": "https://registry.npmjs.org/cache-content-type/-/cache-content-type-2.1.0.tgz",
+    "archiveSha256": "2ee7f6c454996e6780d41eb31309910cbe6cde522bd939aeb77ef5d3beb4315f",
+    "provenanceSha256": "de639d7640471f4003059c059e15b7e4b946fd16c4e49f796e6d4a5fc2e378f7",
+    "origin": {
+      "schema": 1,
+      "name": "cache-content-type",
+      "version": "2.1.0",
+      "modified": false,
+      "source": "Verbatim published npm 2.1.0 package bytes. The separate integration entry adapter preserves its getType implementation and supplies Koa 2 a callable CommonJS export.",
+      "repository": "https://github.com/node-modules/cache-content-type",
+      "revision": "b4d59700bf3f0d4aad25db504cb316526fc029fa",
+      "tarballUrl": "https://registry.npmjs.org/cache-content-type/-/cache-content-type-2.1.0.tgz",
+      "tarballSha256": "2ee7f6c454996e6780d41eb31309910cbe6cde522bd939aeb77ef5d3beb4315f",
+      "license": "MIT"
+    },
+    "consumerVersion": "2.16.4",
+    "nodePackagePath": "node_modules/cache-content-type",
+    "verified": "archive integrity, source and installed code/license bytes, consumer require.resolve"
+  },
+  {
+    "name": "koa-compose",
+    "version": "4.2.0",
+    "consumer": "koa-router",
+    "sourceDirectory": "dev/integration/vendor/koa-compose",
+    "files": [
+      {
+        "path": "index.js",
+        "bytes": 1114,
+        "sha256": "cdb00fa9273d68c23d13a7b5470a8a384fd4a1836236dd87f33a07c0c2a397ea"
+      },
+      {
+        "path": "LICENSE",
+        "bytes": 1093,
+        "sha256": "44a7ca64cb59fbe6481a7260e4317ff0177127a6e50e6077a9bfa60f89f905a2"
+      },
+      {
+        "path": "package.json",
+        "bytes": 510,
+        "sha256": "aeecbe9d7b3ea0cdbd4062bbeb87e828a7e616247dbbab488c6bf515bcb9c6a6"
+      }
+    ],
+    "archive": "dev/integration/vendor/koa-compose-903480c-official.tgz",
+    "resolved": "https://codeload.github.com/koajs/compose/tar.gz/903480c36957776f8561a33a840cdd0a06ad611f",
+    "archiveSha256": "140dfcf376b17b524812b9fc05479e639bde41509516ba26f85c86709aa7813f",
+    "provenanceSha256": "05b6e15cb35392c0e6652ef45f11ad6ad3bd8b1e2f4bc1f53c940dd36e0c2a9e",
+    "origin": {
+      "schema": 1,
+      "package": "koa-compose",
+      "upstreamPackageVersion": "4.2.0",
+      "origin": "official koajs/compose fixed Git commit; not the original npm koa-compose@4.2.0 release",
+      "revision": "903480c36957776f8561a33a840cdd0a06ad611f",
+      "revisionUrl": "https://github.com/koajs/compose/commit/903480c36957776f8561a33a840cdd0a06ad611f",
+      "license": "MIT",
+      "files": [
+        {
+          "file": "index.js",
+          "url": "https://raw.githubusercontent.com/koajs/compose/903480c36957776f8561a33a840cdd0a06ad611f/index.js",
+          "bytes": 1114,
+          "sha256": "cdb00fa9273d68c23d13a7b5470a8a384fd4a1836236dd87f33a07c0c2a397ea"
+        },
+        {
+          "file": "LICENSE",
+          "url": "https://raw.githubusercontent.com/koajs/compose/903480c36957776f8561a33a840cdd0a06ad611f/LICENSE",
+          "bytes": 1093,
+          "sha256": "44a7ca64cb59fbe6481a7260e4317ff0177127a6e50e6077a9bfa60f89f905a2"
+        },
+        {
+          "file": "package.json",
+          "url": "https://raw.githubusercontent.com/koajs/compose/903480c36957776f8561a33a840cdd0a06ad611f/package.json",
+          "bytes": 510,
+          "sha256": "aeecbe9d7b3ea0cdbd4062bbeb87e828a7e616247dbbab488c6bf515bcb9c6a6"
+        }
+      ],
+      "originalNpmRelease": {
+        "version": "4.2.0",
+        "gitHead": "abdaf85dd99fddd4fea6f2ab05ba4e802ed1a234",
+        "indexSha256": "77044f5bea057011f52aa351cefd53032939e9ac36de2bdd983883eaf76d834f",
+        "licenseTextIncluded": false
+      },
+      "modifications": "None. index.js, LICENSE and package.json are verbatim official source bytes; this separate provenance file was added by the Folia Mineradio integration."
+    },
+    "consumerVersion": "7.4.0",
+    "nodePackagePath": "node_modules/koa-compose",
+    "verified": "archive integrity, source and installed code/license bytes, consumer require.resolve"
+  }
+]

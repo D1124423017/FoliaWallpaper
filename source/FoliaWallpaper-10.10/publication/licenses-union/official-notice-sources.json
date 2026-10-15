@@ -1,0 +1,372 @@
+{
+  "schema": 1,
+  "retrievedOn": "2026-10-13",
+  "entries": [
+    {
+      "name": "onnxruntime-node",
+      "version": "1.30.0",
+      "file": "onnxruntime-node@1.30.0/LICENSE.txt",
+      "url": "https://raw.githubusercontent.com/microsoft/onnxruntime/f2c39fe2f838cf35ce7da92824f5a5e3ee6e88a7/LICENSE",
+      "sha256": "2f07c72751aed99790b8a4869cf2311df85a860b22ded05fa22803587a48922c",
+      "bytes": 1073
+    },
+    {
+      "name": "onnxruntime-node",
+      "version": "1.30.0",
+      "file": "onnxruntime-node@1.30.0/THIRD-PARTY-NOTICES.txt",
+      "url": "https://raw.githubusercontent.com/microsoft/onnxruntime/f2c39fe2f838cf35ce7da92824f5a5e3ee6e88a7/ThirdPartyNotices.txt",
+      "sha256": "143764b952fdb1a7c69ce653bfba74a7744d6a8a573bfb73e235fba356c83de3",
+      "bytes": 338088
+    },
+    {
+      "name": "@react-three/fiber",
+      "version": "9.8.1",
+      "file": "@react-three__fiber@9.8.1/LICENSE.txt",
+      "url": "https://raw.githubusercontent.com/pmndrs/react-three-fiber/53ec672ac4a7189711766b87ece18889abbb32d4/LICENSE",
+      "sha256": "9c35b5de7b7493a707fffe4eb23bd2f7f449153c1911f7c6eefb4e591fd5349a",
+      "bytes": 1072
+    },
+    {
+      "name": "gsap",
+      "version": "3.15.0",
+      "file": "gsap@3.15.0/GSAP-Standard-License.html",
+      "url": "https://gsap.com/community/standard-license/",
+      "sha256": "887d7f7fa0111213d9c666de70533d437c53691676e5f8b2c17b50eb3fde7f14",
+      "bytes": 76095
+    },
+    {
+      "name": "@pixi/colord",
+      "version": "2.9.6",
+      "file": "@pixi__colord@2.9.6/LICENSE.txt",
+      "url": "https://raw.githubusercontent.com/omgovich/colord/5344fbf77b736f81cd33c21050021bc09bc9dd1d/LICENSE.md",
+      "sha256": "7613d4594ee8b6163926af3435dae61c9e3d5a27cd137bd76a543ba40002d8fc",
+      "bytes": 1083
+    },
+    {
+      "name": "@rollup/rollup-win32-x64-msvc",
+      "version": "4.63.5",
+      "file": "@rollup__rollup-win32-x64-msvc@4.63.5/LICENSE.txt",
+      "url": "https://raw.githubusercontent.com/rollup/rollup/3722484c33c58b3ab0cbbfcca09b8f267d420329/LICENSE.md",
+      "sha256": "fa1bd040c5bdeefe65b3821cebf474f2733ce65df13089bd151dda1778e62fe8",
+      "bytes": 35231
+    },
+    {
+      "name": "@rollup/rollup-win32-x64-gnu",
+      "version": "4.63.5",
+      "file": "@rollup__rollup-win32-x64-gnu@4.63.5/LICENSE.txt",
+      "url": "https://raw.githubusercontent.com/rollup/rollup/3722484c33c58b3ab0cbbfcca09b8f267d420329/LICENSE.md",
+      "sha256": "fa1bd040c5bdeefe65b3821cebf474f2733ce65df13089bd151dda1778e62fe8",
+      "bytes": 35231
+    },
+    {
+      "name": "@sapphire/async-queue",
+      "version": "1.5.5",
+      "file": "@sapphire__async-queue@1.5.5/LICENSE.txt",
+      "url": "https://raw.githubusercontent.com/sapphiredev/utilities/36268acb83cc613e06836f6ebbdafeeba99c2365/LICENSE.md",
+      "sha256": "9a022e629657a7e9753e631ac112bb4260e71267b9ccff1fa72240eb167e2eeb",
+      "bytes": 1123
+    },
+    {
+      "name": "@sapphire/snowflake",
+      "version": "3.5.5",
+      "file": "@sapphire__snowflake@3.5.5/LICENSE.txt",
+      "url": "https://raw.githubusercontent.com/sapphiredev/utilities/dd52b66fc63099b2f95163eebd4df23c26b1cd16/LICENSE.md",
+      "sha256": "9a022e629657a7e9753e631ac112bb4260e71267b9ccff1fa72240eb167e2eeb",
+      "bytes": 1123
+    },
+    {
+      "name": "copy-to",
+      "version": "2.0.1",
+      "file": "copy-to@2.0.1/LICENSE.txt",
+      "url": "https://raw.githubusercontent.com/node-modules/copy-to/16cc01116fbb05e48ebf96e8e8f9b14cf2a4fba1/LICENSE",
+      "sha256": "92176cf79405c47e534084ca5dcbfdc1db638831ea3717609cdc7f0c2ef27d8e",
+      "bytes": 1076
+    },
+    {
+      "name": "draco3d",
+      "version": "1.5.7",
+      "file": "draco3d@1.5.7/LICENSE.txt",
+      "url": "https://raw.githubusercontent.com/google/draco/8786740086a9f4d83f44aa83badfbea4dce7a1b5/LICENSE",
+      "sha256": "d3709b0fb4b8a94bbb1d02b8a2e484f258b0d9c5c5a01f940391f3fe662cd1a4",
+      "bytes": 13898
+    },
+    {
+      "name": "saxes",
+      "version": "6.0.0",
+      "file": "saxes@6.0.0/LICENSE.txt",
+      "url": "https://raw.githubusercontent.com/lddubeau/saxes/211fa0ebec9b628affc09219199639887174bfc3/LICENSE",
+      "sha256": "0fac2374380621b22e6b50451057721a9c52935b02d16d106a9f04897f061d0e",
+      "bytes": 3011
+    },
+    {
+      "name": "@tokenizer/token",
+      "version": "0.3.0",
+      "file": "@tokenizer__token@0.3.0/README.md",
+      "url": "https://registry.npmjs.org/@tokenizer/token/-/token-0.3.0.tgz",
+      "archiveEntry": "package/README.md",
+      "archiveIntegrity": "sha512-OvjF+z51L3ov0OyAU0duzsYuvO01PH7x4t6DJx+guahgTnBHkhJdG7soQeTSFLWN3efnHyibZ4Z8l2EuWwJN3A==",
+      "sha256": "a88c936c259cc261d5b37a2433735e9819e01f824bdc26e644d46ccd3055c8d7",
+      "bytes": 1451
+    },
+    {
+      "name": "agent-base",
+      "version": "6.0.2",
+      "file": "agent-base@6.0.2/README.md",
+      "url": "https://registry.npmjs.org/agent-base/-/agent-base-6.0.2.tgz",
+      "archiveEntry": "package/README.md",
+      "archiveIntegrity": "sha512-RZNwNclF7+MS/8bDg70amg32dyeZGZxiDuQmZxKLAlQjr3jGyLx+4Kkk58UO7D2QdgFIQCovuSuZESne6RG6XQ==",
+      "sha256": "f1425c3b72330fe4fb2aa5a2fb152e939bdf534692a32b5f0b38f74147b98556",
+      "bytes": 5056
+    },
+    {
+      "name": "cookie-signature",
+      "version": "1.0.7",
+      "file": "cookie-signature@1.0.7/Readme.md",
+      "url": "https://registry.npmjs.org/cookie-signature/-/cookie-signature-1.0.7.tgz",
+      "archiveEntry": "package/Readme.md",
+      "archiveIntegrity": "sha512-NXdYc3dLr47pBkpUCHtKSwIOQXLVn8dZEuywboCOJY/osA0wFSLlSawr3KN8qXJEyX66FcONTH8EIlVuK0yyFA==",
+      "sha256": "1621ed10d0b2f865eb8608e0474a356cf7a9737a384b6593b61b30a9f6e50366",
+      "bytes": 1490
+    },
+    {
+      "name": "data-uri-to-buffer",
+      "version": "4.0.1",
+      "file": "data-uri-to-buffer@4.0.1/README.md",
+      "url": "https://registry.npmjs.org/data-uri-to-buffer/-/data-uri-to-buffer-4.0.1.tgz",
+      "archiveEntry": "package/README.md",
+      "archiveIntegrity": "sha512-0R9ikRb668HB7QDxT1vkpuUBtqc53YyAwMwGeUFKRojY/NWKvdZ+9UYtRfGmhqNbRkTSVpMbmyhXipFFv2cb/A==",
+      "sha256": "a7cc4332acfa1f9b6530e01aac77fefe74f2efa32579215fddaa473013f9a25c",
+      "bytes": 2926
+    },
+    {
+      "name": "degenerator",
+      "version": "5.0.1",
+      "file": "degenerator@5.0.1/README.md",
+      "url": "https://registry.npmjs.org/degenerator/-/degenerator-5.0.1.tgz",
+      "archiveEntry": "package/README.md",
+      "archiveIntegrity": "sha512-TllpMR/t0M5sqCXfj85i4XaAzxmS5tVA16dqvdkMwGmzI+dXLXnw3J+3Vdv7VKw+ThlTMboK6i9rnZ6Nntj5CQ==",
+      "sha256": "72da4948a54a285c3f6d2bc398147dc21ca082316919653dc7c1198dc55a271c",
+      "bytes": 3486
+    },
+    {
+      "name": "is-module",
+      "version": "1.0.0",
+      "file": "is-module@1.0.0/README.md",
+      "url": "https://registry.npmjs.org/is-module/-/is-module-1.0.0.tgz",
+      "archiveEntry": "package/README.md",
+      "archiveIntegrity": "sha512-51ypPSPCoTEIN9dy5Oy+h4pShgJmPCygKfyRCISBI+JoWT/2oJvK8QPxmwv7b/p239jXrm9M1mlQbyKJ5A152g==",
+      "sha256": "17259ca2b9369bd675251b0e2a882f59d7d40fd11caba850bdd2307f29fd34b1",
+      "bytes": 1575
+    },
+    {
+      "name": "https-proxy-agent",
+      "version": "5.0.1",
+      "file": "https-proxy-agent@5.0.1/README.md",
+      "url": "https://registry.npmjs.org/https-proxy-agent/-/https-proxy-agent-5.0.1.tgz",
+      "archiveEntry": "package/README.md",
+      "archiveIntegrity": "sha512-dFcAjpTQFgoLMzC2VwU+C/CbS7uRL0lWmxDITmqm7C+7F0Odmj6s9l6alZc6AELXhrnggM2CeWSXHGOdX2YtwA==",
+      "sha256": "32f0856d2c43df7d05cca960fdee84e1e38ab545bd7b2186433dfa41aa90a712",
+      "bytes": 4761
+    },
+    {
+      "name": "isarray",
+      "version": "1.0.0",
+      "file": "isarray@1.0.0/README.md",
+      "url": "https://registry.npmjs.org/isarray/-/isarray-1.0.0.tgz",
+      "archiveEntry": "package/README.md",
+      "archiveIntegrity": "sha512-VLghIWNM6ELQzo7zwmcg0NmTVyWKYjvIeM83yjp0wRDTmUnrM678fQbcKBo6n2CJEF0szoG//ytg+TKla89ALQ==",
+      "sha256": "ff138e683771b187f3629c383db72ee7d632009010a36d08e18e8d2a34222ec7",
+      "bytes": 1890
+    },
+    {
+      "name": "isarray",
+      "version": "0.0.1",
+      "file": "isarray@0.0.1/README.md",
+      "url": "https://registry.npmjs.org/isarray/-/isarray-0.0.1.tgz",
+      "archiveEntry": "package/README.md",
+      "archiveIntegrity": "sha512-D2S+3GLxWH+uhrNEcoh/fnmYeP8E8/zHl644d/jdA0g2uyXvy3sb0qxotE+ne0LtccHknQzWwZEzhak7oJ0COQ==",
+      "sha256": "5601c343c9aa96449e18aca7a4562038b1d4062f4742a2c9c7f9039f1a303f72",
+      "bytes": 1557
+    },
+    {
+      "name": "only",
+      "version": "0.0.2",
+      "file": "only@0.0.2/Readme.md",
+      "url": "https://registry.npmjs.org/only/-/only-0.0.2.tgz",
+      "archiveEntry": "package/Readme.md",
+      "archiveIntegrity": "sha512-Fvw+Jemq5fjjyWz6CpKx6w9s7xxqo3+JCyM0WXWeCSOboZ8ABkyvP8ID4CZuChA/wxSx+XSJmdOm8rGVyJ1hdQ==",
+      "sha256": "d7f53d74f8c810c4516d316c309360b771e511189923b4def4169085e742bfa6",
+      "bytes": 1520
+    },
+    {
+      "name": "@mediapipe/tasks-vision",
+      "version": "0.10.17",
+      "file": "@mediapipe__tasks-vision@0.10.17/PROJECT-LICENSE.txt",
+      "url": "https://raw.githubusercontent.com/google-ai-edge/mediapipe/9c320247dccf898aef94f3397a9fa01c12b8c7b2/LICENSE",
+      "versionEvidence": "Published package declares this license but omits its full text; retained official project-level notice from a later source revision. This is not the original-version license file.",
+      "declaredLicense": "Apache-2.0",
+      "publishedGitHead": null,
+      "noticeRevision": "9c320247dccf898aef94f3397a9fa01c12b8c7b2",
+      "sha256": "8707eef0533987efc5b155d64761eeb6e20793f50b9bd1a68dad1cf4719d0ed8",
+      "bytes": 12331
+    },
+    {
+      "name": "@rolldown/binding-win32-x64-msvc",
+      "version": "1.2.11",
+      "file": "@rolldown__binding-win32-x64-msvc@1.2.11/PROJECT-LICENSE.txt",
+      "url": "https://raw.githubusercontent.com/rolldown/rolldown/2d44fc3f5ae63b422e2f235215eafe499afefea0/LICENSE",
+      "versionEvidence": "Published package declares this license but omits its full text; retained official project-level notice from a later source revision. This is not the original-version license file.",
+      "declaredLicense": "MIT",
+      "publishedGitHead": null,
+      "noticeRevision": "2d44fc3f5ae63b422e2f235215eafe499afefea0",
+      "sha256": "23ecfff35a5a2e80d92142f75228912c3b1abc4b5a8337a821ff4397e2f9f734",
+      "bytes": 1302
+    },
+    {
+      "name": "cache-content-type",
+      "version": "1.0.1",
+      "file": "cache-content-type@1.0.1/PROJECT-LICENSE.txt",
+      "url": "https://raw.githubusercontent.com/node-modules/cache-content-type/b4d59700bf3f0d4aad25db504cb316526fc029fa/LICENSE",
+      "versionEvidence": "Published package declares this license but omits its full text; retained official project-level notice from a later source revision. This is not the original-version license file.",
+      "declaredLicense": "MIT",
+      "publishedGitHead": "8a43ff8b3f800aef8fa366d99e0a2828705a9ffe",
+      "noticeRevision": "b4d59700bf3f0d4aad25db504cb316526fc029fa",
+      "sha256": "db1cb24ed79e242f829c4c123dfdf1023ed760bc8e88607e1b0316ca8cd6a906",
+      "bytes": 1099
+    },
+    {
+      "name": "filelist",
+      "version": "1.0.6",
+      "file": "filelist@1.0.6/PROJECT-LICENSE.txt",
+      "url": "https://raw.githubusercontent.com/mde/filelist/0c2b78cb425f292b353b5a2bac4a27bebf90c5a9/LICENSE",
+      "versionEvidence": "Published package declares this license but omits its full text; retained official project-level notice from a later source revision. This is not the original-version license file.",
+      "declaredLicense": "Apache-2.0",
+      "publishedGitHead": null,
+      "noticeRevision": "0c2b78cb425f292b353b5a2bac4a27bebf90c5a9",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "bytes": 11358
+    },
+    {
+      "name": "jake",
+      "version": "10.9.4",
+      "file": "jake@10.9.4/PROJECT-LICENSE.txt",
+      "url": "https://raw.githubusercontent.com/jakejs/jake/a98c83fccd88b507b85de0c761ea0c9a81c4c5cc/LICENSE",
+      "versionEvidence": "Published package declares this license but omits its full text; retained official project-level notice from a later source revision. This is not the original-version license file.",
+      "declaredLicense": "Apache-2.0",
+      "publishedGitHead": null,
+      "noticeRevision": "a98c83fccd88b507b85de0c761ea0c9a81c4c5cc",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "bytes": 11358
+    },
+    {
+      "name": "is-regexp",
+      "version": "1.0.0",
+      "file": "is-regexp@1.0.0/PROJECT-LICENSE.txt",
+      "url": "https://raw.githubusercontent.com/sindresorhus/is-regexp/e9cde2aece6a7da6c80cd1a5bd86b2fae13496fb/license",
+      "versionEvidence": "Published package declares this license but omits its full text; retained official project-level notice from a later source revision. This is not the original-version license file.",
+      "declaredLicense": "MIT",
+      "publishedGitHead": null,
+      "noticeRevision": "e9cde2aece6a7da6c80cd1a5bd86b2fae13496fb",
+      "sha256": "5c932d88256b4ab958f64a856fa48e8bd1f55bc1d96b8149c65689e0c61789d3",
+      "bytes": 1117
+    },
+    {
+      "name": "koa-compose",
+      "version": "4.1.0",
+      "file": "koa-compose@4.1.0/LICENSE-CORRESPONDING.txt",
+      "url": "https://raw.githubusercontent.com/koajs/compose/903480c36957776f8561a33a840cdd0a06ad611f/LICENSE",
+      "versionEvidence": "Original npm package omitted full text. This official source revision includes the same distributed index.js except one optional terminating semicolon; package version at that revision is 4.2.0. This is a corresponding-work notice, not an original-published-version document.",
+      "declaredLicense": "MIT",
+      "publishedGitHead": "06e82e65a368ac12cd6405beaf19fd5d208a1477",
+      "noticeRevision": "903480c36957776f8561a33a840cdd0a06ad611f",
+      "sha256": "44a7ca64cb59fbe6481a7260e4317ff0177127a6e50e6077a9bfa60f89f905a2",
+      "bytes": 1093,
+      "codeEvidence": {
+        "mode": "optional-terminating-semicolon",
+        "publishedFile": "index.js",
+        "publishedSha256": "88d51793de9744810cf0ca5db4c7f00816cafed2d6d682e1ccc21e14e19040ba",
+        "officialFile": "koa-compose@4.1.0/OFFICIAL-CORRESPONDING-CODE.js",
+        "officialUrl": "https://raw.githubusercontent.com/koajs/compose/903480c36957776f8561a33a840cdd0a06ad611f/index.js",
+        "officialSha256": "cdb00fa9273d68c23d13a7b5470a8a384fd4a1836236dd87f33a07c0c2a397ea",
+        "officialBytes": 1114,
+        "sourcePackageVersion": "4.2.0"
+      }
+    },
+    {
+      "name": "koa-compose",
+      "version": "3.2.1",
+      "file": "koa-compose@3.2.1/PROJECT-LICENSE.txt",
+      "url": "https://raw.githubusercontent.com/koajs/compose/9a2a426b32c614835b812ecb8de5af06c6c87f6f/LICENSE",
+      "versionEvidence": "Published package declares this license but omits its full text; retained official project-level notice from a later source revision. This is not the original-version license file.",
+      "declaredLicense": "MIT",
+      "publishedGitHead": "9fd370a88ab552f001f2af80e06afced123a4954",
+      "noticeRevision": "9a2a426b32c614835b812ecb8de5af06c6c87f6f",
+      "sha256": "44a7ca64cb59fbe6481a7260e4317ff0177127a6e50e6077a9bfa60f89f905a2",
+      "bytes": 1093
+    },
+    {
+      "name": "koa-static",
+      "version": "5.0.0",
+      "file": "koa-static@5.0.0/LICENSE-CORRESPONDING.txt",
+      "url": "https://raw.githubusercontent.com/koajs/static/9477121cd7e398f5ab18cc53a88065977add63a3/LICENSE",
+      "versionEvidence": "Original npm package omitted full text. This official 5.0.0 source revision adds LICENSE and retains the exact distributed index.js bytes.",
+      "declaredLicense": "MIT",
+      "publishedGitHead": "9b11d848086cd56ac8552b983a22d7386049aca8",
+      "noticeRevision": "9477121cd7e398f5ab18cc53a88065977add63a3",
+      "sha256": "442e977f185ffd2f3301186e6a29316953e16e5889fe3d4686c4eb072be7d785",
+      "bytes": 1080,
+      "codeEvidence": {
+        "mode": "exact-file",
+        "publishedFile": "index.js",
+        "publishedSha256": "03d902461440f9b13319f3e0a6a9f0fdc2e32a01a08317ff1e53f4f63a6c5961",
+        "officialFile": "koa-static@5.0.0/OFFICIAL-CORRESPONDING-CODE.js",
+        "officialUrl": "https://raw.githubusercontent.com/koajs/static/9477121cd7e398f5ab18cc53a88065977add63a3/index.js",
+        "officialSha256": "03d902461440f9b13319f3e0a6a9f0fdc2e32a01a08317ff1e53f4f63a6c5961",
+        "officialBytes": 1418,
+        "sourcePackageVersion": "5.0.0"
+      }
+    },
+    {
+      "name": "maath",
+      "version": "0.10.8",
+      "file": "maath@0.10.8/PROJECT-LICENSE.txt",
+      "url": "https://raw.githubusercontent.com/pmndrs/maath/67df8ec812c253118c035f092ca9b51da155bbed/LICENSE",
+      "versionEvidence": "Published package declares this license but omits its full text; retained official project-level notice from a later source revision. This is not the original-version license file.",
+      "declaredLicense": "MIT",
+      "publishedGitHead": null,
+      "noticeRevision": "67df8ec812c253118c035f092ca9b51da155bbed",
+      "sha256": "f8ed15d0893b846b869dc0290a5aee14c82319a09d3522091ad300a0e5f73291",
+      "bytes": 1071
+    },
+    {
+      "name": "opencc-js",
+      "version": "1.4.2",
+      "file": "opencc-js@1.4.2/LICENSE.txt",
+      "publishedFile": "LICENSE",
+      "url": "https://registry.npmjs.org/opencc-js/-/opencc-js-1.4.2.tgz",
+      "versionEvidence": "Verbatim notice from the locked published npm opencc-js 1.4.2 package. Includes Apache 2.0 dictionary-data attribution and text.",
+      "sha256": "960f7fc16d8baa126802316a7df9078a383af4fb6bc60033adb28e85c08d5e5e",
+      "bytes": 1080
+    },
+    {
+      "name": "opencc-js",
+      "version": "1.4.2",
+      "file": "opencc-js@1.4.2/THIRD_PARTY_LICENSES.md",
+      "publishedFile": "THIRD_PARTY_LICENSES.md",
+      "url": "https://registry.npmjs.org/opencc-js/-/opencc-js-1.4.2.tgz",
+      "versionEvidence": "Verbatim notice from the locked published npm opencc-js 1.4.2 package. Includes Apache 2.0 dictionary-data attribution and text.",
+      "sha256": "42c7dbe71c178fcca97ba945e9ac9ff360fb69bbfea4cb50556f6c65bfa59806",
+      "bytes": 10232
+    },
+    {
+      "name": "opencc-js",
+      "version": "1.4.2",
+      "file": "opencc-js@1.4.2/Apache-2.0.txt",
+      "publishedFile": "LICENSES/Apache-2.0.txt",
+      "url": "https://registry.npmjs.org/opencc-js/-/opencc-js-1.4.2.tgz",
+      "versionEvidence": "Verbatim notice from the locked published npm opencc-js 1.4.2 package. Includes Apache 2.0 dictionary-data attribution and text.",
+      "sha256": "b534e465949558eec2597b04f5092b5e161236a68dfbfd04d547592ac3964308",
+      "bytes": 9165
+    }
+  ]
+}

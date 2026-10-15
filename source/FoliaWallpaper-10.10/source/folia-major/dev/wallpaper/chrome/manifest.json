@@ -1,0 +1,11 @@
+{
+  "manifest_version": 3,
+  "name": "Folia Wallpaper · 網頁播放來源",
+  "version": "1.2.1",
+  "description": "YouTube 自動連線；其他播放網頁可點擊擴充功能連線，提供真實進度給本機桌布。",
+  "permissions": ["activeTab", "scripting"],
+  "action": { "default_title": "指定此分頁為 Folia 播放來源" },
+  "host_permissions": ["http://127.0.0.1:3189/*"],
+  "background": { "service_worker": "background.js", "type": "module" },
+  "content_scripts": [{ "matches": ["https://www.youtube.com/*", "https://music.youtube.com/*"], "js": ["content.js"] }]
+}

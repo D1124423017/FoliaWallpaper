@@ -1,0 +1,34 @@
+{
+  "upstream": "https://github.com/chthollyphile/folia-major",
+  "commit": "a3574a784cb20972ac85edfd71449b1eb848ea7f",
+  "version": "0.7.17-wallpaper.10.10",
+  "license": "AGPL-3.0",
+  "renderer": "src/components/visualizer/VisualizerRenderer.tsx",
+  "mineradio": {
+    "upstream": "https://github.com/XxHuberrr/Mineradio-paused",
+    "commit": "d43de565acabfdc1a9c9820a27e81a98ccbebcef",
+    "license": "GPL-3.0",
+    "presets": [
+      "0",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "excluded": [
+      "7: Sonic Topography",
+      "8: Sonic Workshop"
+    ],
+    "source": "dev/wallpaper/mineradio"
+  },
+  "adapterSource": "source/folia-major/src/wallpaper",
+  "buildCommand": "node publication/prepare-wallpaper-10-10.mjs --rebuild --install-service",
+  "note": "Local adaptation. Original visualizer source is reused; this is not an upstream release.",
+  "sourceUrl": "https://github.com/D1124423017/FoliaWallpaper/releases/tag/wallpaper.10.10"
+}

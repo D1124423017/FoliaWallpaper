@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "package": "koa-compose",
+  "upstreamPackageVersion": "4.2.0",
+  "origin": "official koajs/compose fixed Git commit; not the original npm koa-compose@4.2.0 release",
+  "revision": "903480c36957776f8561a33a840cdd0a06ad611f",
+  "revisionUrl": "https://github.com/koajs/compose/commit/903480c36957776f8561a33a840cdd0a06ad611f",
+  "license": "MIT",
+  "files": [
+    {
+      "file": "index.js",
+      "url": "https://raw.githubusercontent.com/koajs/compose/903480c36957776f8561a33a840cdd0a06ad611f/index.js",
+      "bytes": 1114,
+      "sha256": "cdb00fa9273d68c23d13a7b5470a8a384fd4a1836236dd87f33a07c0c2a397ea"
+    },
+    {
+      "file": "LICENSE",
+      "url": "https://raw.githubusercontent.com/koajs/compose/903480c36957776f8561a33a840cdd0a06ad611f/LICENSE",
+      "bytes": 1093,
+      "sha256": "44a7ca64cb59fbe6481a7260e4317ff0177127a6e50e6077a9bfa60f89f905a2"
+    },
+    {
+      "file": "package.json",
+      "url": "https://raw.githubusercontent.com/koajs/compose/903480c36957776f8561a33a840cdd0a06ad611f/package.json",
+      "bytes": 510,
+      "sha256": "aeecbe9d7b3ea0cdbd4062bbeb87e828a7e616247dbbab488c6bf515bcb9c6a6"
+    }
+  ],
+  "originalNpmRelease": {
+    "version": "4.2.0",
+    "gitHead": "abdaf85dd99fddd4fea6f2ab05ba4e802ed1a234",
+    "indexSha256": "77044f5bea057011f52aa351cefd53032939e9ac36de2bdd983883eaf76d834f",
+    "licenseTextIncluded": false
+  },
+  "modifications": "None. index.js, LICENSE and package.json are verbatim official source bytes; this separate provenance file was added by the Folia Mineradio integration."
+}
