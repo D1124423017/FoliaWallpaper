@@ -1,6 +1,5 @@
 import type { CommandPaletteCommand } from '../types';
 import { defineCommand, createToggleCommand, createHomeTabCommand } from '../commandFactories';
-import { useStreamingPlayerStore } from '../../../stores/useStreamingPlayerStore';
 import { usePlayerExperienceStore } from '../../../stores/usePlayerExperienceStore';
 
 // src/components/command-palette/commands/navigationCommands.ts
@@ -24,12 +23,6 @@ export const navigationCommands: CommandPaletteCommand[] = [
         title: 'Custom experience', description: 'Combine controls, lyrics and backgrounds from both players',
         keywords: ['mix interface', 'hybrid', '混搭', '自订界面'],
         execute: () => { usePlayerExperienceStore.getState().setMode('custom'); return true; },
-    }),
-    defineCommand({
-        id: 'streaming-player', group: 'navigation', platform: ['electron'],
-        title: 'Spotify / YouTube', description: 'Play a Spotify or YouTube link in Folia',
-        keywords: ['spotify', 'youtube', 'yt', '串流', '串流播放', '在線播放'],
-        execute: () => { useStreamingPlayerStore.getState().open(); return true; },
     }),
     defineCommand({
         id: 'lattice-focus-current', group: 'navigation', scope: 'lattice',

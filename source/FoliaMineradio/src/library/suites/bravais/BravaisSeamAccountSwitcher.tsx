@@ -7,7 +7,6 @@ import type { BravaisHomeAccount } from './bravaisHomeModels';
 import { resolveBravaisAccountPopMotion } from './bravaisAccountMotion';
 import { closeBravaisHomePopover, setBravaisHomeOpenRequest, setBravaisHomePopover, useBravaisHomeUiStore } from './bravaisHomeUiStore';
 import BravaisProviderAvatar from './BravaisProviderAvatar';
-import StreamingAccountEntries from '../../../components/streaming/StreamingAccountEntries';
 import './bravaisAccount.css';
 
 // src/library/suites/bravais/BravaisSeamAccountSwitcher.tsx
@@ -156,7 +155,6 @@ const BravaisAccountList: React.FC<{
                     )}
                 </div>
             ))}
-            <StreamingAccountEntries variant="bravais" onClose={onClose} />
         </motion.div>
     );
 };

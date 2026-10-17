@@ -1,7 +1,7 @@
 {
   "productName": "Folia Mineradio",
   "version": "0.7.17-integration.4",
-  "deliveryRevision": "license.1",
+  "deliveryRevision": "ui.2",
   "upstreamFoliaCommit": "a3574a784cb20972ac85edfd71449b1eb848ea7f",
   "archiveMethod": "ZIP store (no compression)",
   "containsUncommittedChanges": true,
@@ -1338,13 +1338,18 @@
     },
     {
       "path": "dev/integration/release/build.mjs",
-      "bytes": 3917,
-      "sha256": "f32803471f0b0302bd4a27b4a200598ed167329e283cd32410c88315aac496ac"
+      "bytes": 4072,
+      "sha256": "eb7a355a6e456fbc1936a39047766c7596614e9301a8afd124b5d80a7d065b07"
     },
     {
       "path": "dev/integration/release/collect-licenses.mjs",
       "bytes": 15891,
       "sha256": "5da951fd30791493ff3b3aa945aef6ade489b80e5deae501352d339df79187b3"
+    },
+    {
+      "path": "dev/integration/release/delivery-options.cjs",
+      "bytes": 1020,
+      "sha256": "285deafd23ced89838b65a76d6783f6ced0753cdafd61bf010a5eb7a7e9dbe0b"
     },
     {
       "path": "dev/integration/release/dependency-usage.mjs",
@@ -1353,8 +1358,8 @@
     },
     {
       "path": "dev/integration/release/electron-builder.cjs",
-      "bytes": 3340,
-      "sha256": "958715989ace86ec829ece7b188117f979e278618e89abbf03cd5688f1ee5a2d"
+      "bytes": 3383,
+      "sha256": "ddc3da0f6d3925a9b1fb111b11a4ebca9dcb2d4cf09b7ea04c6be1e18d252d51"
     },
     {
       "path": "dev/integration/release/installer.nsh",
@@ -1383,13 +1388,13 @@
     },
     {
       "path": "dev/integration/release/shipping-scope.mjs",
-      "bytes": 7059,
-      "sha256": "e0478915361432a4727e9d40ea3f308700496db3228c08061daa05e82f900669"
+      "bytes": 7119,
+      "sha256": "901d1df63a2871600c6b132dc5ab010a0f3d4e21fd0593e608cd808446dfd7ce"
     },
     {
       "path": "dev/integration/release/source-archive.mjs",
-      "bytes": 9781,
-      "sha256": "fa7866b97a0e88cf0eb6de8843f5210048659bf8d2b4fa4d04610ab9ce2a547e"
+      "bytes": 9983,
+      "sha256": "874dd0bd2d0e00468af5acbc81edd73003dd07c007f553f72bf2c78f69b9b534"
     },
     {
       "path": "dev/integration/release/test-license-cache.cjs",
@@ -2528,8 +2533,8 @@
     },
     {
       "path": "docs/integration/BUILD-WINDOWS.md",
-      "bytes": 6723,
-      "sha256": "33cf2619c7cb3c93ddb25987f82e2e40aae1f69dc151cebd6a084bf75afbee31"
+      "bytes": 7495,
+      "sha256": "a3a04cae8fa6ed1635b54f86b91ed4fa454aefea70579f3466fce699d851ea52"
     },
     {
       "path": "docs/integration/INSTALLER-LICENSE.txt",
@@ -2538,8 +2543,8 @@
     },
     {
       "path": "docs/integration/KNOWN-LIMITATIONS.md",
-      "bytes": 2943,
-      "sha256": "6cac0a1fd2d6203360bd502f50e7e4095fd233b594dba3a57c7b17c421c41a7b"
+      "bytes": 3236,
+      "sha256": "b25a81be89ecab3ce68f24e228c4eb2abaf88b2f958e93671944565ce348b455"
     },
     {
       "path": "docs/integration/NOTICE-GAPS.md",
@@ -2552,9 +2557,14 @@
       "sha256": "6182a69dd800436ef3e24b30fa26f37f483603e708ee5ee23c417afcdbf125ef"
     },
     {
+      "path": "docs/integration/UI-CHANGES.md",
+      "bytes": 1180,
+      "sha256": "80db29935769ffed487efaa4ce23926afee298af079eb57b99181aca2777534b"
+    },
+    {
       "path": "docs/integration/USER-GUIDE.md",
-      "bytes": 4910,
-      "sha256": "55e0479b6f81ae0257518e35f656254d4f62921871b31d68271840c0d85def7d"
+      "bytes": 5676,
+      "sha256": "59e879b9683ca056d9e65e1b82f23217c07553a906a36c3c6d1e33f88b5c8422"
     },
     {
       "path": "docs/integration/VALIDATION.md",
@@ -3063,8 +3073,8 @@
     },
     {
       "path": "electron/main.cjs",
-      "bytes": 252933,
-      "sha256": "fd5813ea8c0999c5736173535d16cae9591537a61a17661537e968b01d85afc6"
+      "bytes": 252780,
+      "sha256": "692390846b27338c8ccb46d8e3269947c70046ab1c735fc28910ac6e35c9fea2"
     },
     {
       "path": "electron/modSystem/exportService.cjs",
@@ -3143,8 +3153,8 @@
     },
     {
       "path": "electron/preload.cjs",
-      "bytes": 22426,
-      "sha256": "e2524e689666cff608427041fa668059722d40dd64473ea0b4db284eec3bb2ec"
+      "bytes": 22326,
+      "sha256": "0e466cf298f64768bcf4a3b5f8f7bb01df973a5644842e7fc5eb44c02f01681a"
     },
     {
       "path": "electron/qqApiStartup.cjs",
@@ -3170,21 +3180,6 @@
       "path": "electron/stageApi.cjs",
       "bytes": 77669,
       "sha256": "dd33d26c2c792543c408810c25fe46cab6fc52f70b71fc32c1fbd01ddb00f545"
-    },
-    {
-      "path": "electron/streaming/accounts.cjs",
-      "bytes": 7625,
-      "sha256": "d92468ba16a465226de4acd97fd1636d80f37ea300cef4a7d85a56c633630f6c"
-    },
-    {
-      "path": "electron/streaming/library.cjs",
-      "bytes": 5374,
-      "sha256": "e4f2e53ae876865810a45d1fc8c4188733995cc0aeacb5069ee7a88e2b50ad16"
-    },
-    {
-      "path": "electron/streaming/oauth.cjs",
-      "bytes": 6544,
-      "sha256": "fc447f7a7446a46e263ba9a05502422f228e144ebce562e196d07de72ba0534b"
     },
     {
       "path": "electron/streamingEmbeds.cjs",
@@ -4543,8 +4538,8 @@
     },
     {
       "path": "src/App.tsx",
-      "bytes": 140276,
-      "sha256": "61854fe56c264ff8ef19424c60841ee492a902c4eb4461e5e6861f2f0439f2e9"
+      "bytes": 140163,
+      "sha256": "685e3002114a0ecda1ec35fbebacc651af1dbca363dd026545ae3bdc0660707d"
     },
     {
       "path": "src/README.md",
@@ -4608,8 +4603,8 @@
     },
     {
       "path": "src/components/WindowControls.tsx",
-      "bytes": 6819,
-      "sha256": "1eedec39ff145a982b67957510f4499f4703688d5f5a8ed5e7aaa751b4245602"
+      "bytes": 6394,
+      "sha256": "ad60401c40c8721a770c4127135cf3630fc39e3e18d39d1ae1658616bebc2fc0"
     },
     {
       "path": "src/components/app/AddToPlaylistHost.tsx",
@@ -4618,8 +4613,8 @@
     },
     {
       "path": "src/components/app/AppShell.tsx",
-      "bytes": 7370,
-      "sha256": "a5172493cfaa3a16ed3a0658e572f133b10736f6620e4c1b37e7fff6db770649"
+      "bytes": 7238,
+      "sha256": "6a09569aa50da0f74fed89469bab963d5e4a9cd2f52edc14a9c3944c27903554"
     },
     {
       "path": "src/components/app/Home.tsx",
@@ -5193,8 +5188,8 @@
     },
     {
       "path": "src/components/command-palette/commands/navigationCommands.ts",
-      "bytes": 5791,
-      "sha256": "61fc7aa0d79a4b6c148d30a4e9765034ee8978590cb49314d30dc48abd5b1251"
+      "bytes": 5337,
+      "sha256": "0b70d5e1113041de7a67a887bb1371d0a403a683cce8be023111891269025f1a"
     },
     {
       "path": "src/components/command-palette/commands/panelCommands.ts",
@@ -5553,8 +5548,8 @@
     },
     {
       "path": "src/components/integration/ExperienceSelector.tsx",
-      "bytes": 2993,
-      "sha256": "4a71e55199d0c2f15523d52425eff760cce8f32798f87da1ce3cf704acc8bee9"
+      "bytes": 3240,
+      "sha256": "a3162122fc6c2be9c8f47d1c625af0c3c7a350fdfea2c4120ecfadf0528dffb9"
     },
     {
       "path": "src/components/integration/ExperienceStage.tsx",
@@ -5573,8 +5568,8 @@
     },
     {
       "path": "src/components/integration/MineradioExperienceView.tsx",
-      "bytes": 4750,
-      "sha256": "06d398cd77df5eda281bede78436babf301da6404583dab887b3437c427a4434"
+      "bytes": 5207,
+      "sha256": "74fae2cf30ab7710388661f60cc6f8877cdc80b5d9a78e001116435c7dfb105b"
     },
     {
       "path": "src/components/integration/PlaybackSourceStatus.tsx",
@@ -5583,8 +5578,8 @@
     },
     {
       "path": "src/components/integration/experienceSelector.css",
-      "bytes": 1909,
-      "sha256": "e33e539b4143ec9f1404e0794dcc6c7f6c3be0e6d0f6cacf4ab7f42eab991f18"
+      "bytes": 2454,
+      "sha256": "55d81a680b6ff20ec278bdaadcde220d54142b5fe44613e607a478c449c2eb4e"
     },
     {
       "path": "src/components/local-library-entity/ArtistSplitModeSelector.tsx",
@@ -5898,8 +5893,8 @@
     },
     {
       "path": "src/components/modal/settings/IntegrationSettingsSubview.tsx",
-      "bytes": 58937,
-      "sha256": "ceb01fc320bb52c79ffb40f8ada71d7f0e000b4328e9e84d209d49fe9c3edea5"
+      "bytes": 58163,
+      "sha256": "818166f56f9b54bf04d4e00d3a9d3bb6077e1f5a94483d77ce4478131ecc9d0f"
     },
     {
       "path": "src/components/modal/settings/InteractionSettingsSubview.tsx",
@@ -6917,29 +6912,14 @@
       "sha256": "4f7b46559b34f52568ab09a0cf457da15c7f9d4a1e9cca32492d2a6d92c73b59"
     },
     {
-      "path": "src/components/streaming/StreamingAccountEntries.tsx",
-      "bytes": 2320,
-      "sha256": "9ffa8062812b564b35225e8ae71fa54b5ad794af0c2c433eb4b6e7be21b96263"
-    },
-    {
-      "path": "src/components/streaming/StreamingAccountPanel.tsx",
-      "bytes": 10000,
-      "sha256": "73a894318542b72bc7825f103821617633698f365773cb144ab05f7b91f6976e"
-    },
-    {
-      "path": "src/components/streaming/StreamingAccountSetup.tsx",
-      "bytes": 3322,
-      "sha256": "87e8b51b640ff928e0cab7a3d6b8b1cf38bf5b9c53caa3956333baf33bb4b66a"
-    },
-    {
       "path": "src/components/streaming/StreamingPlayerHost.tsx",
       "bytes": 522,
       "sha256": "9d59551e6c3b19f810b70e8168221015764a28d4b8a7f08531ac29c1364ac5a6"
     },
     {
       "path": "src/components/streaming/StreamingPlayerPanel.tsx",
-      "bytes": 7020,
-      "sha256": "a5b656388db54401962fecd6d7226be21f4e7e71df9b47b1ca4c737266dc8c16"
+      "bytes": 5749,
+      "sha256": "3e63676f1c83e550bd92dbbb1c6ad836b9b126b4b6e2860c2740f2cfc92ccc5f"
     },
     {
       "path": "src/components/visualizer/FontFallbackStackControl.tsx",
@@ -9213,8 +9193,8 @@
     },
     {
       "path": "src/hooks/useTransportCommandRefs.ts",
-      "bytes": 3292,
-      "sha256": "3110076c76094238031155806be63a05abf7606b7c9fbad17d211d8494fef17e"
+      "bytes": 2946,
+      "sha256": "62117152b11d5b8a5bd5aab00cdb66a1a7d56ad8b0485258344577c333a816f3"
     },
     {
       "path": "src/hooks/useViewportSettle.ts",
@@ -9233,23 +9213,23 @@
     },
     {
       "path": "src/i18n/locales/en.ts",
-      "bytes": 354763,
-      "sha256": "c2509a6c6dee67e974a3bdc8962841d1c57dfc4decf40cf9f5a22a4c50ab0f10"
+      "bytes": 350371,
+      "sha256": "c1bcf7e94c49041d3aa5677b4b78df4f0038dd2eecc43e08a57e8456f7ad1af4"
     },
     {
       "path": "src/i18n/locales/in.ts",
-      "bytes": 358485,
-      "sha256": "6e6b9d2523a34133add788558aa133a6c5bf6d51987400f0c7f69a0870d5a6a8"
+      "bytes": 354093,
+      "sha256": "b54d41303583924fffb45457c8f7b6e40e0c71d2a428d5912d51a5931525fef0"
     },
     {
       "path": "src/i18n/locales/zh-CN.ts",
-      "bytes": 323992,
-      "sha256": "61c6590154fad270b998c1662f80b93547042825b8d6107c08f1ff4f23d4d2c6"
+      "bytes": 319835,
+      "sha256": "32357108a0ea5b306f6fdbbbb7b2c913dc2d4b0152b79cb83852e8e57e56ea15"
     },
     {
       "path": "src/i18n/locales/zh-TW.ts",
-      "bytes": 330127,
-      "sha256": "c6ef5324aadc4e4979e31ddf721dd2f489a20ff2f0d954a062883cd0f5a4fb3f"
+      "bytes": 325842,
+      "sha256": "5c18f2f0699916ce8e3e7b5631426fa45517afa6154f66316746ce7a7f555ccd"
     },
     {
       "path": "src/i18n/missingTranslation.ts",
@@ -10093,8 +10073,8 @@
     },
     {
       "path": "src/library/suites/bravais/BravaisSeamAccountSwitcher.tsx",
-      "bytes": 17529,
-      "sha256": "dbb8d790aa35fd7c804fb868fefb0d7823f26605ff2bd80eeb2fb275022239c4"
+      "bytes": 17360,
+      "sha256": "85cfe3dafc09634ec28e92f9be01f22ee3911fe4f8fc5cd8617367d27a0336d8"
     },
     {
       "path": "src/library/suites/bravais/BravaisSeamArtist.tsx",
@@ -10658,8 +10638,8 @@
     },
     {
       "path": "src/library/suites/grid/account/ProviderConnectButton.tsx",
-      "bytes": 6372,
-      "sha256": "77faa1157a2ad24b3894269f6cae42e68d59a8d89da50c571e4938cbc7af61d6"
+      "bytes": 6221,
+      "sha256": "4242c10f473ef058487375c97fbd9c62840d11e7ab0ba04081d35dd09516e1f5"
     },
     {
       "path": "src/library/suites/grid/account/QrLoginFailureHelp.tsx",
@@ -11952,11 +11932,6 @@
       "sha256": "22e85bb2602f2388bdfabc19d53e94a224f6853c9c44ea2b329229f61b7eb31f"
     },
     {
-      "path": "src/services/streamingAccounts.ts",
-      "bytes": 519,
-      "sha256": "f9746e0d1281e15aaf7c116568e128965fb9bdeecd7aaf1be3632b1d3c3469a7"
-    },
-    {
       "path": "src/services/sync/settingsSnapshot.ts",
       "bytes": 11543,
       "sha256": "535910bd130b0ae2e6e5866fb9883618a70c6723f0a81e2345d378c0286d0359"
@@ -12237,11 +12212,6 @@
       "sha256": "d6b07cac5f3ae5643cb2d882bc04e0741b9ff062d31cd598fe831f8458b0dab5"
     },
     {
-      "path": "src/stores/useStreamingAccountsStore.ts",
-      "bytes": 1182,
-      "sha256": "8eea5392e13bd0277f820494f07192985d619e41439f364cc7fd3c162bef0b0d"
-    },
-    {
       "path": "src/stores/useStreamingPlayerStore.ts",
       "bytes": 622,
       "sha256": "4a850efb9075a6bea96403b4ff0c3e91875bdaf8f51519649e6d55b1ea04bdcb"
@@ -12375,11 +12345,6 @@
       "path": "src/types/remoteControl.ts",
       "bytes": 3011,
       "sha256": "74a5ff21deb8dac472118aaf5d824a9612fc7d9c5f0a010ae03a120899db18d2"
-    },
-    {
-      "path": "src/types/streamingAccounts.ts",
-      "bytes": 1122,
-      "sha256": "f3e764c92e8b8cdef3084d0341895fadb856623ebf1fbff5e1ec87bd78d86bcd"
     },
     {
       "path": "src/types/streamingPlayer.ts",
@@ -13223,8 +13188,8 @@
     },
     {
       "path": "src/vite-env.d.ts",
-      "bytes": 40505,
-      "sha256": "b2f660e070fd2474e036cfa45f1987f13712c33627a6a7618735c24e56711083"
+      "bytes": 40328,
+      "sha256": "7bfeefbf86f8883d0f9f6848ce8f5347da265ebaf4c5730b50617e59beca66c7"
     },
     {
       "path": "src/wallpaper/WallpaperApp.tsx",
@@ -14313,8 +14278,8 @@
     },
     {
       "path": "test/unit/command-palette/__snapshots__/commandRegistryContract.test.ts.snap",
-      "bytes": 6776,
-      "sha256": "04da46418640b8c8108abf5e468500523b2de4df963be48c408e28e0f023da6a"
+      "bytes": 6754,
+      "sha256": "aab4180f6a946f4fde590a0a10a5f32326875ebaed224813d0d7ceb04a0fe419"
     },
     {
       "path": "test/unit/command-palette/artistCommands.test.ts",
@@ -16580,11 +16545,6 @@
       "path": "test/unit/stores/wallpaperEntryConfirm.test.ts",
       "bytes": 9170,
       "sha256": "608796e2278b88f31ec59262995c4330fd92093d1b776ef6d0208bc38eb76d6a"
-    },
-    {
-      "path": "test/unit/streamingAccounts.test.ts",
-      "bytes": 8630,
-      "sha256": "b913987a14eb09bd5e3e4e5b41d5a517fa6d5cd6d780b5cdaccd8ad01d066628"
     },
     {
       "path": "test/unit/streamingLinks.test.ts",

@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
-import { Copy, Maximize, Minimize, Minus, Music2, Radio, Square, X } from 'lucide-react';
-import { useStreamingPlayerStore } from '../stores/useStreamingPlayerStore';
+import { Copy, Maximize, Minimize, Minus, Radio, Square, X } from 'lucide-react';
 import { usePlayerChromeSettingsStore } from '../stores/usePlayerChromeSettingsStore';
 
 export default function WindowControls({
@@ -16,7 +15,6 @@ export default function WindowControls({
     hideFullscreenButton: boolean;
 }) {
     const { t } = useTranslation();
-    const openStreamingPlayer = useStreamingPlayerStore(state => state.open);
     const [isMaximized, setIsMaximized] = useState(false);
     const [isFullscreen, setIsFullscreen] = useState(false);
     const useNativeMacFullscreenButton = usePlayerChromeSettingsStore(state => state.useNativeMacFullscreenButton);
@@ -85,10 +83,6 @@ export default function WindowControls({
                 pointerEvents: 'none',
             } as React.CSSProperties}
         >
-            <button className={btnClass} tabIndex={standardControlsVisible ? 0 : -1}
-                title={t('streaming.title')} aria-label={t('streaming.title')} onClick={() => openStreamingPlayer()}>
-                <Music2 size={16} />
-            </button>
             <button
                 className={remoteBtnClass}
                 title={t('ui.remoteControl')}

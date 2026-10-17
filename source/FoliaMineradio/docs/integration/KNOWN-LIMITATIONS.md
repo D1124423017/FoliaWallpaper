@@ -1,9 +1,10 @@
 # 已知限制與驗證範圍
 
-版本 `0.7.17-integration.4`，交付修訂 `license.1`。實測結果見 `VALIDATION.md` 與交付目錄 `FINAL-VALIDATION.md`；原始碼、安裝包及測試的雜湊見 `ARTIFACTS.json`。
+版本 `0.7.17-integration.4`，本機介面修訂 `ui.2`。`VALIDATION.md` 保留先前 `license.1` 的完整實測歷史；本次介面變更見 `UI-CHANGES.md` 及本次交付目錄的 QA 紀錄。舊交付目錄 `FINAL-VALIDATION.md` 與 `ARTIFACTS.json` 對應先前的 `license.1` 成品。
 
 - 僅提供 Windows x64 本機預覽版，安裝包未簽章，未自動發布到 GitHub 或 Steam Workshop。
 - 播放來源沿用 Folia 原有支援來源；不能把 Spotify／YouTube 的外部跟隨模式稱為本播放器已接入其完整帳號串流。平台會員、地區、音源及帳號權限仍依各服務。
+- 舊 Spotify／YouTube 混合頁面與帳號接入已移除，未提供其帳號登入或帳號歌單讀取。外部播放器跟隨功能仍由獨立桌布／瀏覽器連接流程提供。
 - 已使用使用者自行登入的網易雲帳號實測共享帳號、讀取歌單、收藏、加入歌曲及移除，測試資料均還原。未使用真實酷狗或 Navidrome 帳號驗證其遠端寫入；Omni 未提供線上歌單建立／刪除功能。
 - 切換三種體驗保留同一播放核心；冷啟動沿用 Folia 的行為，恢復歌曲與佇列但保持暫停，不保存精確播放秒數。暫停有淡出，跳轉會恢復播放。
 - Mineradio 保留原版 11 種支援預設、粒子舞臺、鏡頭、DIY 及 3D 歌單架。Sonic Topography／Sonic Workshop（7、8）的 preset 和 vendor 未交付；外部 AI 深度圖、MediaPipe 手勢模型及獨立自動混音未接入。

@@ -1,8 +1,6 @@
 /* Presentation picker stays below Electron's titlebar and does not change app-wide styles. */
-.experience-selector { position: fixed; top: 40px; left: 14px; z-index: 1200; max-width: min(360px, calc(100vw - 28px)); color: #f4f4f5; font-size: 12px; line-height: 1.5; -webkit-app-region: no-drag; }
-.experience-selector-trigger, .experience-selector-content { border: 1px solid #ffffff26; background: #151820ed; box-shadow: 0 5px 20px #0003; border-radius: 12px; }
-.experience-selector-trigger { display: flex; align-items: center; gap: 8px; padding: 8px 12px; cursor: pointer; }
-.experience-selector-content { padding: 14px; margin-top: 6px; max-height: calc(100vh - 115px); overflow-y: auto; overscroll-behavior: contain; }
+.experience-selector { color: var(--text-primary, #f4f4f5); font-size: 14px; line-height: 1.5; -webkit-app-region: no-drag; }
+.experience-selector-content { border: 1px solid #ffffff26; background: #151820ed; border-radius: 12px; padding: 14px; }
 .experience-mode-buttons { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
 .experience-mode-buttons button { border: 1px solid #ffffff29; border-radius: 8px; padding: 6px 10px; cursor: pointer; background: #ffffff09; }
 .experience-mode-buttons button[aria-pressed="true"] { color: #11131b; background: #d8e4f4; border-color: #d8e4f4; }
@@ -14,3 +12,10 @@
 .experience-selector-embedded { position: static; max-width: none; width: 100%; font-size: 14px; }
 .experience-selector-embedded .experience-selector-content { margin-top: 0; max-height: none; }
 .experience-selector-embedded .experience-selector-content p { max-width: none; }
+.titlebar-experience { display: flex; align-items: center; height: 32px; margin-right: 8px; opacity: 0; pointer-events: none; -webkit-app-region: no-drag; }
+.titlebar-experience[data-revealed="true"], .titlebar-experience:focus-within { opacity: 1; pointer-events: auto; }
+.titlebar-experience[data-disabled="true"] { opacity: 0; pointer-events: none; }
+.titlebar-experience select { width: 118px; height: 26px; padding: 2px 8px; border-radius: 7px; border: 1px solid #ffffff26; background: #1c1e26; color: #f4f4f5; font-size: 12px; cursor: pointer; -webkit-app-region: no-drag; }
+.titlebar-experience[data-daylight="true"] select { background: #f4f4f5; color: #27272a; border-color: #0002; }
+.titlebar-experience select:focus-visible { outline: 2px solid #aac8ed; outline-offset: 1px; }
+@media (max-width: 440px) { .titlebar-experience { margin-right: 2px; } .titlebar-experience select { width: 84px; padding-inline: 3px; } }

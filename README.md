@@ -6,10 +6,10 @@
 
 | 成品 | 下載與說明 |
 | --- | --- |
-| Windows x64 播放器 | [player.0.7.17-integration.4-license.1](https://github.com/D1124423017/FoliaWallpaper/releases/tag/player.0.7.17-integration.4-license.1) · [功能、安裝與限制](PLAYER.md) |
+| Windows x64 播放器 | [player.0.7.17-integration.4-ui.2](https://github.com/D1124423017/FoliaWallpaper/releases/tag/player.0.7.17-integration.4-ui.2) · [功能、安裝與限制](PLAYER.md) |
 | Wallpaper Engine 桌布及配套工具 | [wallpaper.10.10](https://github.com/D1124423017/FoliaWallpaper/releases/tag/wallpaper.10.10) · [安裝與重建](source/FoliaWallpaper-10.10/PUBLICATION.md) |
 
-播放器為未簽章預覽版，可選 Folia、Mineradio 或自訂混搭介面，共用播放、歌詞、帳號、佇列及設定。播放器直接播放與桌布跟隨外部播放器是不同的資料來源模式。
+播放器目前為 ui.2 未簽章預覽版，頂部標題列可直接切換 Folia／Mineradio／自訂，已移除 YouTube 帳號接入。兩套介面共用播放、歌詞、支援平台帳號、佇列及設定。播放器直接播放與桌布跟隨外部播放器是不同的資料來源模式。
 
 ## Wallpaper Engine 桌布
 

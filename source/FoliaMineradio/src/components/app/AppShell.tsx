@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import { Lock, LockOpen } from 'lucide-react';
 import TitlebarDragZone from '../TitlebarDragZone';
 import WindowControls from '../WindowControls';
-import StreamingPlayerHost from '../streaming/StreamingPlayerHost';
+import ExperienceSelector from '../integration/ExperienceSelector';
 
 // Shared shell for the app container, Electron titlebar, and mounted audio node.
 type AppShellProps = {
@@ -44,7 +44,6 @@ const AppShell: React.FC<AppShellProps> = ({
 }) => {
     const { t } = useTranslation();
     const [isWindowMaximized, setIsWindowMaximized] = useState(false);
-    const hasFullscreenTitlebarButton = isElectronWindow && !hideFullscreenButton;
 
     useEffect(() => {
         if (!useCustomWindowRadius || !window.electron?.isWindowMaximized) {
@@ -113,11 +112,11 @@ const AppShell: React.FC<AppShellProps> = ({
                     <div className="relative h-full">
                         <TitlebarDragZone active={usesCustomWindowChrome} />
                         <div
-                            className={`pointer-events-auto absolute top-0 z-20 h-full flex items-center ${
-                                hasFullscreenTitlebarButton ? 'right-[268px]' : 'right-[224px]'
-                            }`}
+                            data-testid="titlebar-controls"
+                            className="pointer-events-none absolute top-0 right-0 z-20 h-full flex items-center"
                             style={{ WebkitAppRegion: 'no-drag' } as React.CSSProperties}
                         >
+                            {isElectronWindow && <ExperienceSelector revealed={areTitlebarControlsVisible} disabled={isMainWindowClickThroughEnabled} isDaylight={isDaylight} />}
                             <button
                                 type="button"
                                 aria-label={t(isMainWindowClickThroughEnabled ? 'remote.disableClickThrough' : 'remote.enableClickThrough')}
@@ -139,8 +138,6 @@ const AppShell: React.FC<AppShellProps> = ({
                             >
                                 {isMainWindowClickThroughEnabled ? <Lock size={14} /> : <LockOpen size={14} />}
                             </button>
-                        </div>
-                        <div className="pointer-events-auto absolute top-0 right-0 z-10 h-full">
                             <WindowControls
                                 revealed={areTitlebarControlsVisible}
                                 isDaylight={isDaylight}
@@ -154,7 +151,6 @@ const AppShell: React.FC<AppShellProps> = ({
 
             {audioElement}
             {children}
-            <StreamingPlayerHost />
         </div>
     );
 };

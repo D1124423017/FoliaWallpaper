@@ -7,7 +7,6 @@ const Store = require('electron-store').default || require('electron-store');
 const crypto = require('crypto');
 const { createStageApi } = require('./stageApi.cjs');
 const { installStreamingEmbedIdentity, protectStreamingNavigation } = require('./streamingEmbeds.cjs');
-const { registerStreamingAccountIpc } = require('./streaming/accounts.cjs');
 const { createModSystem } = require('./modSystem/modSystem.cjs');
 const { MOD_PROTOCOL_PRIVILEGED_SCHEME } = require('./modSystem/modProtocol.cjs');
 const { createWindowPlaybackHandoffStore } = require('./windowPlaybackHandoff.cjs');
@@ -5174,7 +5173,6 @@ app.whenReady().then(async () => {
     app.setAppUserModelId(WINDOWS_APP_USER_MODEL_ID);
   }
   installStreamingEmbedIdentity(session.defaultSession, WINDOWS_APP_USER_MODEL_ID);
-  registerStreamingAccountIpc({ ipcMain, app, store, safeStorage, shell });
 
   if (process.platform === 'linux' && typeof safeStorage.getSelectedStorageBackend === 'function') {
     const backend = safeStorage.getSelectedStorageBackend();

@@ -6,10 +6,12 @@ import { execFileSync } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
 import { Zip, ZipPassThrough, unzipSync } from 'fflate';
 import { unsupportedMineradioPresets } from '../mineradio/unsupported-output.mjs';
+import getIntegrationDelivery from './delivery-options.cjs';
 
 // dev/integration/release/source-archive.mjs — bundle reproducible modified source without private settings or runtimes.
 const repo = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../../..');
-const destination = path.resolve(repo, '../../outputs/FoliaMineradio');
+const delivery = getIntegrationDelivery(repo);
+const destination = delivery.output;
 const metadata = JSON.parse(await fs.readFile(path.join(repo, 'package.json'), 'utf8'));
 const version = `${metadata.version}-integration.4`;
 const permittedDirectories = new Set(['api', 'api-ts', 'assets', 'build', 'dev', 'deploy', 'docs', 'electron', 'img', 'mods', 'packaging', 'public',
@@ -77,6 +79,7 @@ files.sort();
 for (const required of ['assets/placeholder_cover.jpg', 'assets/placeholder_cover-2.jpg', '.npmrc', '.nvmrc', 'package-lock.json',
   'docs/integration/BUILD-WINDOWS.md', 'dev/integration/mineradio/fonts/JetBrainsMono.ttf',
   'dev/integration/release/build.mjs', 'dev/integration/release/vite.config.ts', 'dev/integration/release/electron-builder.cjs',
+  'dev/integration/release/delivery-options.cjs',
   'dev/integration/release/source-archive.mjs', 'dev/wallpaper/release/build.mjs',
   'dev/integration/release/renderer-scope.mjs', 'dev/integration/release/shipping-scope.mjs',
   'dev/integration/release/vendor-scope.mjs', 'dev/integration/mineradio/unsupported-output.mjs',
@@ -102,14 +105,15 @@ for (const name of files) {
 }
 let commit = null;
 try { commit = execFileSync('git', ['rev-parse', 'HEAD'], { cwd: repo, encoding: 'utf8', stdio: ['ignore', 'pipe', 'ignore'] }).trim(); } catch { /* A source archive may have no Git checkout. */ }
-const manifest = { productName: 'Folia Mineradio', version, deliveryRevision: 'license.1', upstreamFoliaCommit: commit, archiveMethod: 'ZIP store (no compression)',
+const manifest = { productName: 'Folia Mineradio', version, deliveryRevision: delivery.revision, upstreamFoliaCommit: commit, archiveMethod: 'ZIP store (no compression)',
   containsUncommittedChanges: true, files: records, excluded: [...ignoredDirectories, ...[...excludedVendorDirectories].map(name => `vendor/${name}`),
     ...unsupportedMineradioPresets, 'build/ffmpeg', 'private .env files', 'binary runtime files'] };
 if (process.argv.includes('--check')) {
-  console.log(JSON.stringify({ files: records.length, bytes: records.reduce((sum, item) => sum + item.bytes, 0), checked: 'source file selection and key scan' }, null, 2));
+  console.log(JSON.stringify({ files: records.length, bytes: records.reduce((sum, item) => sum + item.bytes, 0),
+    deliveryRevision: delivery.revision, output: destination, checked: 'source file selection and key scan' }, null, 2));
 } else {
   await fs.mkdir(destination, { recursive: true });
-  const archivePath = path.join(destination, `Folia-Mineradio-Source-${version}-license.1.zip`);
+  const archivePath = path.join(destination, `Folia-Mineradio-Source-${version}-${delivery.revision}.zip`);
   const temporaryPath = `${archivePath}.incomplete`;
   const output = createWriteStream(temporaryPath);
   const completed = new Promise((resolve, reject) => { output.once('finish', resolve); output.once('error', reject); });

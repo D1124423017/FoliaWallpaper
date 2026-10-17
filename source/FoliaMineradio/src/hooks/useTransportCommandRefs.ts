@@ -1,6 +1,5 @@
 import { useEffect, useMemo, useRef } from 'react';
 import { selectDisplayPlayerState, usePlaybackStore } from '../stores/usePlaybackStore';
-import { useStreamingPlayerStore } from '../stores/useStreamingPlayerStore';
 
 // src/hooks/useTransportCommandRefs.ts
 //
@@ -62,11 +61,6 @@ export const useTransportCommandRefs = ({
     useEffect(() => {
         taskbarPlayerStateRef.current = displayPlayerState;
     }, [displayPlayerState]);
-
-    // Pause through the existing transport so automix and local playback cannot overlap the embed.
-    useEffect(() => useStreamingPlayerStore.subscribe((state, previous) => {
-        if (state.isOpen && !previous.isOpen) mediaSessionPauseRef.current();
-    }), []);
 
     // Refs are stable, so the container is built once.
     return useMemo(() => ({

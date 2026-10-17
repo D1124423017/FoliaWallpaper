@@ -3,6 +3,7 @@ const metadata = require('../../../package.json');
 
 // dev/integration/release/electron-builder.cjs — independent local Windows package; no upstream publishing.
 const repo = path.resolve(__dirname, '../../..');
+const delivery = require('./delivery-options.cjs')(repo);
 module.exports = {
   extends: null,
   appId: 'local.folia.mineradio',
@@ -18,10 +19,10 @@ module.exports = {
     description: 'Folia 與 Mineradio 整合播放器（本機預覽版）',
     main: 'electron/integration/main.cjs',
     foliaReleaseChannel: 'internal',
-    foliaDeliveryRevision: 'license.1',
+    foliaDeliveryRevision: delivery.revision,
   },
   directories: {
-    output: path.resolve(repo, '../../outputs/FoliaMineradio'),
+    output: delivery.output,
     buildResources: 'build',
   },
   publish: null,
@@ -60,7 +61,7 @@ module.exports = {
     icon: 'build/icon.png',
     signAndEditExecutable: false,
     target: [{ target: 'nsis', arch: ['x64'] }],
-    artifactName: 'Folia-Mineradio-Setup-${version}-license.1-${arch}.${ext}',
+    artifactName: `Folia-Mineradio-Setup-\${version}-${delivery.revision}-\${arch}.\${ext}`,
   },
   nsis: {
     oneClick: false,

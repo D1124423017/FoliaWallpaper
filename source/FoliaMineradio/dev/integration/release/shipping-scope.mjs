@@ -6,6 +6,7 @@ import { fileURLToPath } from 'node:url';
 import { readVerifiedRendererScope } from './renderer-scope.mjs';
 import { verifyVendorScope } from './vendor-scope.mjs';
 import { verifyPackagedLicensedBackend, retiredBackendVersions } from './licensed-backend.mjs';
+import getIntegrationDelivery from './delivery-options.cjs';
 
 // Verify actual packaged code, rather than interpreting the lockfile as a list of distributed modules.
 const defaultRepo = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../../..');
@@ -15,7 +16,7 @@ const excludedNames = new Set(['electron-updater', 'lazy-val']);
 export async function verifyShippingScope({ repo = defaultRepo, appOutDir } = {}) {
   const require = createRequire(path.join(repo, 'package.json'));
   const asar = require('@electron/asar');
-  const output = appOutDir ?? path.resolve(repo, '../../outputs/FoliaMineradio/win-unpacked');
+  const output = appOutDir ?? path.join(getIntegrationDelivery(repo).output, 'win-unpacked');
   const archive = path.join(output, 'resources/app.asar');
   const entries = asar.listPackage(archive).map(value => value.replaceAll('\\', '/').replace(/^\//, ''));
   const extract = file => asar.extractFile(archive, file.replaceAll('/', path.sep));

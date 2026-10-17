@@ -4,7 +4,6 @@ import { motion } from 'framer-motion';
 import { useReducedMotionFor } from '../../../../hooks/useReducedMotionFor';
 import { pillChromeClassesFor as gridChromeClassesFor } from '../../../../components/shared/pillChrome';
 import type { ProviderAccountSummary } from '../../../../types/onlineMusic';
-import StreamingAccountEntries from '../../../../components/streaming/StreamingAccountEntries';
 
 // src/library/suites/grid/account/ProviderConnectButton.tsx
 // 与 GridViewTabs 同款的胶囊切换：所有平台常驻为徽章，只有选中的一个展开显示操作文案。
@@ -105,7 +104,6 @@ export default function ProviderConnectButton({ providers, isDaylight, getAction
                     </motion.button>
                 );
             })}
-            <StreamingAccountEntries variant="grid" />
         </div>
     );
 }

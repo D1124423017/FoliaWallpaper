@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Activity, AlertCircle, Check, Loader2, Music2, RotateCcw, Server, Trash2 } from 'lucide-react';
+import { Activity, AlertCircle, Check, Loader2, RotateCcw, Server, Trash2 } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { useShallow } from 'zustand/react/shallow';
 import type { NowPlayingConnectionStatus, StageSource, StageStatus, Theme } from '../../../types';
@@ -18,7 +18,6 @@ import SettingsSectionHeading from './navigation/SettingsSectionHeading';
 import { setStatusMessage } from '../../../stores/useStatusMessageStore';
 import { useThemeSettingsStore } from '../../../stores/useThemeSettingsStore';
 import { useStageSettingsStore } from '../../../stores/useStageSettingsStore';
-import { useStreamingPlayerStore } from '../../../stores/useStreamingPlayerStore';
 
 // src/components/modal/settings/IntegrationSettingsSubview.tsx
 // Integration settings for Discord, Stage, Now Playing, OBS, and Navidrome.
@@ -373,15 +372,6 @@ const IntegrationSettingsSubview: React.FC<IntegrationSettingsSubviewProps> = ({
 
     return (
         <>
-            {isElectron && (
-                <SettingsAnchor anchorId="streamingPlayer" label={t('streaming.title')}>
-                    <SettingsSectionHeading icon={Music2} label={t('streaming.title')} />
-                    <div className={`p-4 rounded-xl border space-y-3 ${settingsCardClass}`}>
-                        <p className="text-sm" style={{ color: 'var(--text-secondary)' }}>{t('streaming.description')}</p>
-                        <button type="button" onClick={() => useStreamingPlayerStore.getState().open()} className="px-4 py-2 rounded-lg border text-sm">{t('streaming.load')}</button>
-                    </div>
-                </SettingsAnchor>
-            )}
             {isElectron && (
                 <SettingsAnchor anchorId="discordRichPresence" label={t('options.discordRichPresence') || 'Discord Rich Presence'}>
                     <SettingsSectionHeading icon={Activity} label={t('options.discordRichPresence') || 'Discord Rich Presence'} />

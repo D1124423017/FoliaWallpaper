@@ -6,12 +6,15 @@ import { dispatchIntegrationAction } from '../../integration/dispatch';
 import { currentTime, lyricCurrentTime } from '../../stores/motionSignals';
 import { integrationAudioSnapshot } from '../../integration/audio';
 import { usePlaybackStore } from '../../stores/usePlaybackStore';
+import { useSettingsModalStore } from '../../stores/useSettingsModalStore';
+import { useTranslation } from 'react-i18next';
 
 // Original Mineradio is an isolated view. The Folia audio decks remain mounted in AppShell.
 export default function MineradioExperienceView({ theme, presentation, profileKey }: {
   theme: Theme; presentation: IntegrationSnapshot['presentation'];
   profileKey: 'folia' | 'mineradio' | 'custom';
 }) {
+  const { t } = useTranslation();
   const frame = useRef<HTMLIFrameElement>(null);
   const latest = useRef({ theme, presentation }); latest.current = { theme, presentation };
   const sendNow = useRef<(() => void) | null>(null);
@@ -74,6 +77,11 @@ export default function MineradioExperienceView({ theme, presentation, profileKe
       data-testid="mineradio-experience" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', border: 0,
         zIndex: presentation.showLyrics || !presentation.showBackground ? 2 : 0,
         pointerEvents: presentation.showControls || presentation.showShelf ? 'auto' : 'none', background: 'transparent' }} />
-    {error && <div role="alert" style={{ position: 'absolute', bottom: 60, left: 20, padding: 14, background: '#241818', color: '#fff', borderRadius: 12 }}>{error}</div>}
+    {error && <div role="alert" style={{ position: 'absolute', bottom: 60, left: 20, zIndex: 20, maxWidth: 'calc(100% - 40px)', padding: 14, background: '#241818', color: '#fff', borderRadius: 12 }}>
+      <p>{error}</p>
+      <button type="button" className="mt-3 rounded-lg border border-white/30 px-3 py-2 text-sm" onClick={() => useSettingsModalStore.getState().openSettings('options', 'general')}>
+        {t('options.generalSettings')}
+      </button>
+    </div>}
   </>;
 }

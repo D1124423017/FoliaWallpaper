@@ -1,3 +1,23 @@
+# Folia Mineradio 0.7.17-integration.4 ui.2
+
+頂部標題列現在可以直接選擇 Folia、Mineradio 或自訂，修正舊浮動選單與返回按鈕重疊。設定頁只保留自訂的控制、歌詞與背景組合。已移除所有 YouTube 帳號登入、OAuth、帳號歌單 API 與憑證教學，並清除停用的 Spotify 帳號模組；其他平台帳號及桌布外部來源同步保留。
+
+## 安裝與來源
+
+下載 `Folia-Mineradio-Setup-0.7.17-integration.4-ui.2-x64.exe`；Windows x64 未簽章預覽版。關閉程式後安裝，原設定位置不變。`Folia-Mineradio-Source-0.7.17-integration.4-ui.2.zip` 為完整對應修改來源，附3499檔 manifest及重建流程。安裝包與來源SHA-256見 `SHA256SUMS.txt`。
+
+[使用與限制](https://github.com/D1124423017/FoliaWallpaper/blob/player.0.7.17-integration.4-ui.2/PLAYER.md) · [完整來源](https://github.com/D1124423017/FoliaWallpaper/tree/player.0.7.17-integration.4-ui.2/source/FoliaMineradio) · [發布驗證](https://github.com/D1124423017/FoliaWallpaper/blob/player.0.7.17-integration.4-ui.2/docs/player-ui.2/PUBLICATION.md)
+
+## 驗證與限制
+
+TypeScript、93項相關測試、實際歌曲與歌詞、5次選單／1次鍵盤切換、視窗控制及點穿狀態通過；切換保留歌曲、音訊來源、進度、音量與佇列。安裝後37份持久化設定檔保持相同。此修訂未重跑一小時／實體多螢幕長測，跨來源QQ搜尋仍有API錯誤；不保證所有歌曲或來源正常。
+
+來源與本機驗證快照中的「未發布」描述屬2026-10-16歷史狀態；此Release為2026-10-17公開版本。舊license.1與wallpaper.10.10保留，未更新Steam工坊。
+
+感謝 [Folia／chthollyphile](https://github.com/chthollyphile/folia-major)、[Mineradio／XxHuberrr](https://github.com/XxHuberrr/Mineradio-paused) 及所有貢獻者。保留AGPL-3.0、GPL-3.0與第三方各自授權及作者通知；GSAP為Standard No-Charge License，並非MIT。這是非官方改作，不附歌曲或平台帳號。
+
+---
+
 # Folia Wallpaper wallpaper.10.10
 
 Folia × Mineradio 的非官方繁體中文 Wallpaper Engine Web 桌布。保留原版歌詞與背景，加入 Mineradio 粒子、可操作的設定選單、來源選擇及 Folia Mineradio 共用資料介面。

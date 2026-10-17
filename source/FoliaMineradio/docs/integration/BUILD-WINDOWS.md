@@ -21,6 +21,13 @@ node dev/integration/release/source-archive.mjs
 
 前端輸出在 `.integration-build/dist`，套件內對應路徑仍為 `dist`；Electron 與 electron-builder 的下載快取在 `.integration-build/cache`。所有建置固定使用 `--publish never` 並停用套件發布來源。輸出在專案所在工作區的 `outputs/FoliaMineradio`。
 
+新的本機修訂可在同一個 PowerShell 工作階段指定以下選項，再執行上面的檢查、建置與原始碼封裝命令，避免覆寫已發布的交付檔。不設定時仍使用 `license.1` 與原輸出位置。修訂只接受小寫英文、數字、`.`、`-`（最多 64 字元）；輸出必須在工作區 `outputs` 的子資料夾，相對路徑從專案根目錄解析。兩個選項同時套用到安裝包、`win-unpacked`、交付 metadata、原始碼 ZIP 與包裝檢查；不改變應用程式 ID 或使用者資料夾，也不更改播放器版本號。
+
+```powershell
+$env:FOLIA_INTEGRATION_DELIVERY_REVISION = 'ui.2'
+$env:FOLIA_INTEGRATION_OUTPUT_DIR = (Join-Path (Resolve-Path '../../outputs').Path 'FoliaMineradio_UI_2026-10-16_ui2')
+```
+
 整合包識別：`local.folia.mineradio`；主程式 `electron/integration/main.cjs`；設定資料夾 `%APPDATA%\Folia Mineradio`。預覽版沒有簽章憑證，不會啟用原 Folia 上游更新器。`signAndEditExecutable:false` 避免本機預覽建置需要簽章工具；可執行檔的 Windows 版本資源仍可能顯示 Electron 的資訊，以交付 manifest 和程式內版本為準。
 
 `prepare-runtime.mjs` 只下載及驗證精確 Electron、FFmpeg 和 NSIS 1.2.1 工具集，不啟動任何應用程式。Electron 壓縮檔的 SHA-256 會與鎖定套件內的檢查碼比較；結果位於 `.integration-build/runtime-manifest.json`。上面的 `FOLIA_INTEGRATION_ELECTRON_DIST` 指向剛校驗完成的 runtime，避免 electron-builder 重新尋找或下載另一份 Electron；請勿將它指向未校驗或不同版本的目錄。

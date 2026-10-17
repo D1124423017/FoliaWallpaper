@@ -19,6 +19,7 @@ const env = {
 };
 const required = [
   'electron/integration/main.cjs', 'dev/integration/release/electron-builder.cjs',
+  'dev/integration/release/delivery-options.cjs',
   'node_modules/vite/bin/vite.js', 'node_modules/electron-builder/cli.js',
   'docs/integration/INSTALLER-LICENSE.txt',
 ];
@@ -44,7 +45,9 @@ if (options.has('--check')) {
   await require('app-builder-lib/out/util/config/config.js').validateConfiguration(config);
   if (config.publish !== null || config.appId !== 'local.folia.mineradio') throw new Error('Unsafe package identity or publishing configuration.');
   console.log(JSON.stringify({ productName: config.productName, appId: config.appId, electronVersion: config.electronVersion,
-    main: config.extraMetadata.main, version: config.extraMetadata.version, publish: 'never', verified: 'configuration only' }, null, 2));
+    main: config.extraMetadata.main, version: config.extraMetadata.version,
+    deliveryRevision: config.extraMetadata.foliaDeliveryRevision, output: config.directories.output,
+    publish: 'never', verified: 'configuration only' }, null, 2));
 } else {
   if (process.platform !== 'win32' || process.arch !== 'x64') throw new Error('This package recipe currently supports Windows x64 only.');
   if (!options.has('--skip-build')) await run(['dev/integration/mineradio/package.mjs']);

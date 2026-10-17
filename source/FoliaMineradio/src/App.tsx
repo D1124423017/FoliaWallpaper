@@ -11,7 +11,6 @@ import { useCommandPaletteContext } from './hooks/useCommandPaletteContext';
 import { useReducedMotionFor } from './hooks/useReducedMotionFor';
 import AppShell from './components/app/AppShell';
 import ExperienceStage from './components/integration/ExperienceStage';
-import ExperienceSelector from './components/integration/ExperienceSelector';
 import PlaybackSourceStatus from './components/integration/PlaybackSourceStatus';
 import { usePlayerExperienceStore } from './stores/usePlayerExperienceStore';
 import { useIntegrationHostActions } from './integration/hostActions';
@@ -2912,7 +2911,6 @@ export default function App() {
             />
 
             <AppDialogs model={appDialogsModel} />
-            <ExperienceSelector />
             <PlaybackSourceStatus loading={isLyricsLoading} />
             <IntegrationStatusMessage />
             <ReleaseNotesDialog

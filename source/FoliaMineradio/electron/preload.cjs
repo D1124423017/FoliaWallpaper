@@ -3,7 +3,6 @@ const { contextBridge, ipcRenderer, webUtils } = require('electron');
 contextBridge.exposeInMainWorld('electron', {
     publishIntegrationWallpaper: (snapshot) => ipcRenderer.send('integration-wallpaper-snapshot', snapshot),
     getIntegrationWallpaperStatus: () => ipcRenderer.invoke('integration-wallpaper-status'),
-    streamingAccountRequest: (request) => ipcRenderer.invoke('streaming-account-request', request),
     webUtils: {
       // File.path was removed in modern Electron; this is the supported way to
       // resolve the OS path of a dropped file from the renderer.
